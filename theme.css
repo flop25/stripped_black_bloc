@@ -1,0 +1,58 @@
+#theCategoryPage #content, #content, #subcontent, #the_page {
+    max-width: none;
+}
+#theCommentsPage #content,
+#theUploadPage #content,
+#theRegisterPage #content,
+#theIdentificationPage #content,
+#theProfilePage #content,
+#theSearchPage #content,
+#theAboutPage #content,
+#thePopuphelpPage #content,
+#thePasswordPage #content,
+#theNotificationPage #content,
+#theTagsPage #content,
+#theNBMPage #content
+{
+	width:auto;
+}
+.bloc {
+	 	display: block;
+    margin: 3px;
+    padding: 5px;
+    width: 150px;
+}
+.bloc * {
+    position: relative;
+}
+.bloc .title {
+	    color: #FFFFFF;
+    left: 6px;
+    max-width: 138px !important;
+    padding: 7px 10px 6px;
+    position: absolute;
+    top: 6px;
+    z-index: 1;
+    background-image: url("img/btn.png");
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    margin-right: 5px;
+    padding: 7px 10px 8px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: normal;
+}
+.bloc a {
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-indent: -9999px;
+    width: 160px;
+}
