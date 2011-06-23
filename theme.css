@@ -16,6 +16,9 @@
 {
 	width:auto;
 }
+#menubar_container, #subcontent {
+    display: block;
+}
 .bloc {
 	 	display: block;
     margin: 3px;

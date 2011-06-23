@@ -33,5 +33,9 @@ function MY($tpl_thumbnails_var)
 		}
 		return $new_tplvar;
 }
-
+add_event_handler('init', 'MY_init');
+function MY_init()
+{
+	remove_event_handler('loc_begin_index', 'modify_nb_thumbnail_page');
+}
 ?>
