@@ -1,4 +1,5 @@
-#theCategoryPage #content, #content, #subcontent, #the_page {
+/**/
+#theCategoryPage #content, #content, #subcontent, #the_page, #thumbnails_block1 {
     max-width: none;
 }
 #theCommentsPage #content,
@@ -16,11 +17,31 @@
 {
 	width:auto;
 }
-#menubar_container, #subcontent {
-    display: block;
+/*
+#menubar_container {
+    display: inline-block;
+}  
+
+ #subcontent {
+    display: inline-block;
+		width:100%;
+}  
+*/
+ #subcontent {
+    margin-left: 20em;
+    min-height: 466px;
+		display:inherit;
 }
+#menubar {
+    display: inline;
+    float: left;
+    margin: 0 0 10px 1em;
+    padding: 0;
+    width: 18em;
+}  
+
 .bloc {
-	 	display: block;
+    display: block;
     margin: 3px;
     padding: 5px;
     width: 150px;
@@ -58,4 +79,21 @@
     position: relative;
     text-indent: -9999px;
     width: 160px;
+}
+/** color **/
+body {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-family: Helvetica,Arial,sans-serif;
+    margin: 5px;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#thePicturePage .left_block, #thePicturePage .right_block, #thePicturePage .middle_block, #content {
+  background: transparent
+}
+#theHeader, .titrePage, .titrePage a {
+    color: #E6554F;
 }
