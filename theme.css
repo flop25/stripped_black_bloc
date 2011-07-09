@@ -1,5 +1,5 @@
 /**/
-#theCategoryPage #content, #content, #subcontent, #the_page, #thumbnails_block1 {
+#theCategoryPage #content, #content, #subcontent, #the_page, #thumbnails_block1, #thePicturePage #content {
     max-width: none;
 }
 #theCommentsPage #content,
@@ -28,9 +28,8 @@
 }  
 */
  #subcontent {
-    margin-left: 20em;
     min-height: 466px;
-		display:inherit;
+		display:block;
 }
 #menubar {
     display: inline;

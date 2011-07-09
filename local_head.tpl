@@ -11,19 +11,37 @@ function tnb_resize() {
 	});
 
 }
+jQuery(document).ready(function(jQuery){
+	
+	jQuery(".bloc a").hover(function() { jQuery(this).fadeTo(500, 1); }, function() { jQuery(this).fadeTo(500, 0.75);  });
+	var sidemenu = jQuery.cookie('side-menu');
+	var isdisplayed;
+		// if cookie says the menu is hiding, keep it hidden!
+	if (sidemenu == 'hiding') {
+		jQuery("#subcontent").css({'margin-left' : '0'});
+		isdisplayed=false;
+	}
+	if (sidemenu == 'showing') {
+		jQuery("#subcontent").css({'margin-left' : '20em'});
+		isdisplayed=true;
+	}
+	// creates a variable with the contents of the cookie side-menu
+	jQuery("#menuswitcher").click(function(){
+		if (jQuery("#menubar").is(":hidden") || isdisplayed==false ) {
+			jQuery("#subcontent").css({'margin-left' : '20em'});
+			isdisplayed=true;
+		} else {
+			jQuery("#subcontent").css({'margin-left' : '0'});
+			isdisplayed=false;
+		}
+	});
 
-jQuery(document).ready(function(){
-	$('#subcontent').masonry({
+	jQuery('#subcontent').masonry({
 		  singleMode: true, 
 		columnWidth: 200, 
 		itemSelector: '.bloc',
 		animate: true
 	});
-	
-$(".bloc a").hover(function() { $(this).fadeTo(500, 1); }, function() { $(this).fadeTo(500, 0.75);  });
-});
-	jQuery("#menuswitcher").click(function(){
-
 });
   </script> 
 {/literal}

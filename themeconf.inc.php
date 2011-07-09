@@ -19,6 +19,7 @@ $themeconf = array(
   'mime_icon_dir' => 'themes/default/icon/mimetypes/',
   'local_head' => 'local_head.tpl',
 );
+add_event_handler('loc_end_index_category_thumbnails', 'MY');
 add_event_handler('loc_end_index_thumbnails', 'MY');
 function MY($tpl_thumbnails_var)
 {
