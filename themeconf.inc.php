@@ -1,11 +1,11 @@
 <?php
 /*
 Theme Name: Stripped & Columns
-Version: 0
+Version: auto
 Description: stripped_black_bloc
-Theme URI: http://piwigo.org/ext/extension_view.php?eid=
-Author: 
-Author URI: 
+Theme URI: http://piwigo.org/ext/extension_view.php?eid=568
+Author: flop25
+Author URI: http://www.planete-flop.fr
 */
 
 
