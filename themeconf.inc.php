@@ -1,6 +1,6 @@
 <?php
 /*
-Theme Name: stripped_black_bloc
+Theme Name: Stripped & Columns
 Version: 0
 Description: stripped_black_bloc
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=

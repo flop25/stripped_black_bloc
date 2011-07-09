@@ -1,5 +1,5 @@
 {foreach from=$blocks item=block key=key}
-    <div id="stuffs_block_{$block.ID}" class="content bloc {$block.CLASS} {$block.TEMPLATE|replace:'.tpl':''}" {if !empty($block.WIDTH)}style="width: {$block.WIDTH}%;"{/if}>
+    <div id="stuffs_block_{$block.ID}" class="content bloc_stuff {$block.CLASS} {$block.TEMPLATE|replace:'.tpl':''}" {if !empty($block.WIDTH)}style="width: {$block.WIDTH}%;"{/if}>
     {if isset($block.TITLE)}
       <div class="titrePage">
         {if !empty($block.U_EDIT)}
