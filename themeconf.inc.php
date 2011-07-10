@@ -19,6 +19,10 @@ $themeconf = array(
   'mime_icon_dir' => 'themes/default/icon/mimetypes/',
   'local_head' => 'local_head.tpl',
 );
+
+load_language('theme.lang', PHPWG_THEMES_PATH.'stripped_black_bloc/');
+
+
 add_event_handler('loc_end_index_category_thumbnails', 'MY');
 add_event_handler('loc_end_index_thumbnails', 'MY');
 function MY($tpl_thumbnails_var)
@@ -39,4 +43,26 @@ function MY_init()
 {
 	remove_event_handler('loc_begin_index', 'modify_nb_thumbnail_page');
 }
+
+/************************************ index.tpl ************************************/
+add_event_handler('loc_end_index', 'stripped_black_bloc_index');
+function stripped_black_bloc_index()
+{
+    global $template;
+    $template->set_prefilter('index', 'stripped_black_bloc_prefilter_index');
+}
+function stripped_black_bloc_prefilter_index($content, &$smarty)
+{
+  $search = '#\{if \!empty\(\$navbar\) \}[\s]*\{include file=\'navigation_bar\.tpl\'\|@get_extent:\'navbar\'\}[\s]*\{/if\}#';  
+  $replacement = '';
+  $content = preg_replace($search, $replacement, $content);
+
+  $search = '#<\!-- subContent -->#';  
+  $replacement = '<\!-- subContent -->
+	{if !empty($navbar) }
+		{include file=\'navigation_bar.tpl\'|@get_extent:\'navbar\'}
+	{/if}';
+  return preg_replace($search, $replacement, $content);
+}
+
 ?>

@@ -1,5 +1,5 @@
 <div class="navigationBar">
-	<span class="nav_bulle">Page {$navbar.CURRENT_PAGE} / {$navbar.pages|@count}</span>
+	<span class="nav_bulle">{'Page'|@translate} {$navbar.CURRENT_PAGE} / {$navbar.pages|@count}</span>
   {if isset($navbar.URL_FIRST)}
   <a href="{$navbar.URL_FIRST}" rel="first" class="first nav_bulle">{'First'|@translate}</a>
   <a href="{$navbar.URL_PREV}" rel="prev" class="newer nav_bulle">«</a>
