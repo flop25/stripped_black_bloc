@@ -22,18 +22,55 @@ $themeconf = array(
 
 load_language('theme.lang', PHPWG_THEMES_PATH.'stripped_black_bloc/');
 
+// Need upgrade?
 
+global $conf;
+
+if (!isset($conf['stripped_black_bloc']))
+  include(PHPWG_THEMES_PATH.'stripped_black_bloc/admin/upgrade.inc.php');
+
+add_event_handler('loc_begin_page_header', 'set_config_values_stripped_black_bloc');
+
+function set_config_values_stripped_black_bloc()
+{
+	global $conf, $template;
+	$config = unserialize( $conf['stripped_black_bloc'] );
+	$template->assign( 'stripped_black_bloc', $config );
+}
+
+/// EVENT
 add_event_handler('loc_end_index_category_thumbnails', 'MY');
 add_event_handler('loc_end_index_thumbnails', 'MY');
 function MY($tpl_thumbnails_var)
 {
-    global $template;
+    global $template, $conf;
+		$config = unserialize( $conf['stripped_black_bloc'] );
 		$new_tplvar=array();
 		foreach ($tpl_thumbnails_var as $tplvar)
 		{
 			list($width, $height, $type, $attr) = getimagesize(	$tplvar['TN_SRC'] );
 			$tplvar['TN_WIDTH']=$width;
 			$tplvar['TN_HEIGHT']=$height;
+			if (isset($config['thumbnail']))
+			{
+				switch ($config['thumbnail'])
+				{
+					case 'generated':
+						$tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/timthumb.php?src=".$tplvar['TN_SRC']."&w=".$config['thumbnail_width'];
+						$tplvar['TN_HEIGHT']=floor($tplvar['TN_HEIGHT']*($config['thumbnail_width']/$tplvar['TN_WIDTH']));
+						$tplvar['TN_WIDTH']=$config['thumbnail_width'];
+					break;
+					case 'auto':
+						if($tplvar['TN_WIDTH']<=$config['thumbnail_width'])
+						{
+							$tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/timthumb.php?src=".$tplvar['TN_SRC']."&w=".$config['thumbnail_width'];
+							$tplvar['TN_HEIGHT']=floor($tplvar['TN_HEIGHT']*($config['thumbnail_width']/$tplvar['TN_WIDTH']));
+							$tplvar['TN_WIDTH']=$config['thumbnail_width'];
+						}
+					break;
+					case 'piwigo':break;
+				}
+			}
 			$new_tplvar[]=$tplvar;
 		}
 		return $new_tplvar;

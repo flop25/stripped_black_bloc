@@ -1,6 +1,15 @@
 {if ($BODY_ID=='theCategoryPage')}
 {combine_script id='jquery.masonry' load='header' require='jquery' path='themes/stripped_black_bloc/js/masonry.js'}
-{html_head}{literal} 
+{html_head}{literal}
+<style>
+.bloc {
+	width: {/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width}{/if}{literal}px;
+}
+.bloc a {
+	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width}{/if}{literal}px;
+}
+</style>
+
 <script type="text/javascript">
 /**
 * jQuery Cookie plugin
@@ -43,15 +52,24 @@ jQuery.cookie = function (key, value, options) {
     var result, decode = options.raw ? function (s) { return s; } : decodeURIComponent;
     return (result = new RegExp('(?:^|; )' + encodeURIComponent(key) + '=([^;]*)').exec(document.cookie)) ? decode(result[1]) : null;
 };
+
+    // MASONRY
+
 function tnb_resize() {
 	$('#subcontent').masonry({
-		columnWidth: 170, 
+		columnWidth: {/literal} {if $stripped_black_bloc.column_width}{$stripped_black_bloc.column_width}{/if}{literal}, 
 		itemSelector: '.bloc, .content_block, .bloc_stuff',
 		isAnimated: true
 	});
 }
+
+
 jQuery(document).ready(function(jQuery){
+
+	// fade onmouseover
 	jQuery(".bloc a").hover(function() { jQuery(this).fadeTo(500, 1); }, function() { jQuery(this).fadeTo(500, 0.75);  });
+
+	// sidemenu managment
 	var sidemenu = jQuery.cookie('side-menu');
 	var isdisplayed;
 		// if cookie says the menu is hiding, keep it hidden!

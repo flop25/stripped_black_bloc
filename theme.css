@@ -70,7 +70,7 @@
 }
 .bloc .title {
     left: 6px;
-    max-width: 138px !important;
+    max-width: 138px;
     padding: 7px 10px 6px;
     position: absolute;
     top: 6px;
