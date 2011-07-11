@@ -46,11 +46,17 @@
 .stuffs_thumbnails .bloc {
     display: inline-block !important;
 }
-.stuffs_thumbnails {
-	width:400px;
-}
 .stuffs_thumbnails #thumbnails {
 	margin:0;
+}
+.stuffs_thumbnails .bloc {
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	
+}
+.bloc_stuff {
+	z-index:999;
 }
 #thePicturePage .stuffs_thumbnails {
 	width:auto;
@@ -61,6 +67,9 @@
     padding: 5px;
     width: 150px;
 		z-index:999;
+}
+.content_block, .bloc_stuff, #subcontent .middle_block {
+    margin: 3px !important;
 }
 .content_block {
 	z-index:999;
@@ -97,6 +106,9 @@
 #thumb_navigation {
 	display:none
 }
+#subcontent .stuffs_block #comments ul.thumbnailCategories, #comments ul {
+	padding:20px;
+}
 /****************
  color backgroung etc 
  ************************/
@@ -110,7 +122,7 @@ a {
     color: #FFFFFF;
     text-decoration: none;
 }
-.bloc .title, .nav_bulle {
+.masonry-brick, .bloc .title, .nav_bulle {
 	color: #FFFFFF;
 	background-image: url("img/btn.png");
 	border-radius: 5px 5px 5px 5px;
@@ -132,10 +144,18 @@ a {
 #theHeader, .titrePage, .titrePage a, .footer_login a, .navigationBar a {
     color: #E6554F;
 }
-.album .title {
-	color:#F8CDCB;
+.album {
+	background-color:#595959;
 }
 
 .content_block .additional_info {
 	color:inherit;
+	background: none;
+	border:none;
+}
+.content_block, .bloc_stuff {
+	border: 1px solid #424242;
+}
+#thePicturePage .left_block, #thePicturePage .right_block, #thePicturePage .middle_block, #content {
+	border:none;
 }

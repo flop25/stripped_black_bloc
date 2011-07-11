@@ -56,14 +56,28 @@ function MY($tpl_thumbnails_var)
 				switch ($config['thumbnail'])
 				{
 					case 'generated':
-						$tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/timthumb.php?src=".$tplvar['TN_SRC']."&w=".$config['thumbnail_width'];
+						if (isset($tplvar['FILE_WIDTH']))
+						{
+							$tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/timthumb.php?src=".$tplvar['FILE_PATH']."&w=".$config['thumbnail_width'];
+						}
+						else
+						{
+							$tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/timthumb.php?src=".$tplvar['TN_SRC']."&w=".$config['thumbnail_width'];
+						}
 						$tplvar['TN_HEIGHT']=floor($tplvar['TN_HEIGHT']*($config['thumbnail_width']/$tplvar['TN_WIDTH']));
 						$tplvar['TN_WIDTH']=$config['thumbnail_width'];
 					break;
 					case 'auto':
 						if($tplvar['TN_WIDTH']<=$config['thumbnail_width'])
 						{
-							$tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/timthumb.php?src=".$tplvar['TN_SRC']."&w=".$config['thumbnail_width'];
+							if (isset($tplvar['FILE_WIDTH']))
+							{
+								$tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/timthumb.php?src=".$tplvar['FILE_PATH']."&w=".$config['thumbnail_width'];
+							}
+							else
+							{
+								$tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/timthumb.php?src=".$tplvar['TN_SRC']."&w=".$config['thumbnail_width'];
+							}
 							$tplvar['TN_HEIGHT']=floor($tplvar['TN_HEIGHT']*($config['thumbnail_width']/$tplvar['TN_WIDTH']));
 							$tplvar['TN_WIDTH']=$config['thumbnail_width'];
 						}

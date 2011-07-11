@@ -8,6 +8,12 @@
 .bloc a {
 	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width}{/if}{literal}px;
 }
+.content_block, .bloc_stuff {
+	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width*2 }{/if}{literal}px;
+}
+.stuffs_thumbnails, .stuffs_thumbnails #thumbnails {
+	width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width }{/if}{literal}px;
+}
 </style>
 
 <script type="text/javascript">
