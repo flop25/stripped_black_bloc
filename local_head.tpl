@@ -2,17 +2,20 @@
 {combine_script id='jquery.masonry' load='header' require='jquery' path='themes/stripped_black_bloc/js/masonry.js'}
 {html_head}{literal}
 <style>
+#theHeader a, .titrePage a, .footer_login a, .navigationBar a {
+	color: {/literal}{if $stripped_black_bloc.color_main}#{$stripped_black_bloc.color_main}{/if}{literal};
+}
 .bloc {
 	width: {/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width}{/if}{literal}px;
 }
 .bloc a {
 	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width}{/if}{literal}px;
 }
-.content_block, .bloc_stuff {
-	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width*2 }{/if}{literal}px;
+.content_block, .bloc_stuff, .two_columns {
+	width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.column_width*2-10}{/if}{literal}px;
 }
-.stuffs_thumbnails, .stuffs_thumbnails #thumbnails {
-	width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width }{/if}{literal}px;
+.stuffs_thumbnails, .stuffs_thumbnails #thumbnails, .one_column {
+	width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width-10 }{/if}{literal}px;
 }
 </style>
 

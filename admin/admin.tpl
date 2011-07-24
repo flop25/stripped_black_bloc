@@ -7,6 +7,11 @@
     <legend>{'Displaying options'|@translate}</legend>
     <ul>
     <li>
+      <label for="color_main"><span class="property">{'color main'|@translate}</span>&nbsp;</label>
+      <input type="text" id="color_main" name="f_color_main" size="6" maxlength="6" value="{$options.color_main}" style="text-align:center;">
+      </li>
+    <li>
+    <li>
       <label for="column_width"><span class="property">{'Width of columns'|@translate}</span>&nbsp;</label>
       <input type="text" id="column_width" name="f_column_width" size="4" maxlength="4" value="{$options.column_width}" style="text-align:center;">
       &nbsp;px</li>

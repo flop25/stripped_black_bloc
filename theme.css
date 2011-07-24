@@ -30,6 +30,7 @@
  #subcontent {
     min-height: 490px;
 		display:block;
+		width:auto;
 }
 #menubar {
     display: inline;
@@ -63,7 +64,8 @@
 }
 .bloc {
     display: block;
-    margin: 3px;
+    margin-top: 3px;
+		margin-bottom:3px;
     padding: 5px;
     width: 150px;
 		z-index:999;
@@ -109,6 +111,13 @@
 #subcontent .stuffs_block #comments ul.thumbnailCategories, #comments ul {
 	padding:20px;
 }
+#subcontent .stuffs_block, .content_block {
+	padding:0;
+}
+#theHeader h1 {
+	padding:0;
+}
+	
 /****************
  color backgroung etc 
  ************************/
@@ -141,7 +150,7 @@ a {
 #thePicturePage .left_block, #thePicturePage .right_block, #thePicturePage .middle_block, #content {
   background: transparent
 }
-#theHeader, .titrePage, .titrePage a, .footer_login a, .navigationBar a {
+#theHeader a, .titrePage a, .footer_login a, .navigationBar a {
     color: #E6554F;
 }
 .album {
@@ -158,4 +167,51 @@ a {
 }
 #thePicturePage .left_block, #thePicturePage .right_block, #thePicturePage .middle_block, #content {
 	border:none;
+}
+#menubar {
+	color: #FFFFFF;
+	background-image: url("img/btn.png");
+	border-radius: 5px 5px 5px 5px;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	white-space: normal;
+	border: 1px solid #424242;
+	padding:5px;
+}
+#menubar dd{
+	font-weight:normal;
+}
+.browsePath, #theHeader, .titrePage .categoryActions, #imageTitle, .randomButtons, #footer_left, #copyright {
+	color: #FFFFFF;
+	background-image: url("img/btn.png");
+	background-color:transparent;
+	border-radius: 5px 5px 5px 5px;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: normal;
+	border: 1px solid #424242;
+	padding:5px;
+}
+#tabZone {
+	color: #FFFFFF;
+	background-image: url("img/btn.png");
+	border-radius: 5px 5px 5px 5px;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: normal;
+	border: 1px solid #424242;
+	padding:5px;
+	background-color:transparent;
+}
+#tabZone * {
+	color: #FFFFFF;
+	background-color:transparent;
 }

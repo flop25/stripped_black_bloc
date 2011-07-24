@@ -2,6 +2,7 @@
 
 $lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns, Page de configuration';
 $lang['Page'] = 'Page';
+$lang['color main'] = "Couleur non grise :";
 $lang['Displaying options'] = "Options d'affichage";
 $lang['Width of columns'] = "Largeur des colonnes";
 $lang['Width of thumbnails'] = "Largeur des miniatures";

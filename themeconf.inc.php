@@ -24,10 +24,7 @@ load_language('theme.lang', PHPWG_THEMES_PATH.'stripped_black_bloc/');
 
 // Need upgrade?
 
-global $conf;
-
-if (!isset($conf['stripped_black_bloc']))
-  include(PHPWG_THEMES_PATH.'stripped_black_bloc/admin/upgrade.inc.php');
+include(PHPWG_THEMES_PATH.'stripped_black_bloc/admin/upgrade.inc.php');
 
 add_event_handler('loc_begin_page_header', 'set_config_values_stripped_black_bloc');
 
@@ -104,6 +101,10 @@ function stripped_black_bloc_index()
 }
 function stripped_black_bloc_prefilter_index($content, &$smarty)
 {
+  $search = '#Menu</span>#';  
+  $replacement = "{'Show/hide menu'|@translate}</span>";
+	
+  $content = preg_replace($search, $replacement, $content);
   $search = '#\{if \!empty\(\$navbar\) \}[\s]*\{include file=\'navigation_bar\.tpl\'\|@get_extent:\'navbar\'\}[\s]*\{/if\}#';  
   $replacement = '';
   $content = preg_replace($search, $replacement, $content);
