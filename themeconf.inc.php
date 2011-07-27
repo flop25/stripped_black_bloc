@@ -104,8 +104,13 @@ function stripped_black_bloc_prefilter_index($content, &$smarty)
   $search = '#Menu</span>#';  
   $replacement = "{'Show/hide menu'|@translate}</span>";
   $content = preg_replace($search, $replacement, $content);
-  $search = '#id="thumbnails_block2"#';  
+  $search = '#<div id="subcontent">#';  
   $replacement = "";
+  $content = preg_replace($search, $replacement, $content);
+  $search = '#\{if \!empty\(\$CONTENT_DESCRIPTION\) \}#';  
+  $replacement = '	<div id="subcontent">
+
+		{if !empty($CONTENT_DESCRIPTION) }';
   $content = preg_replace($search, $replacement, $content);
   $search = '#\{if \!empty\(\$navbar\) \}[\s]*\{include file=\'navigation_bar\.tpl\'\|@get_extent:\'navbar\'\}[\s]*\{/if\}#';  
   $replacement = '';
