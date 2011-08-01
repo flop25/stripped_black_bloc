@@ -17,8 +17,13 @@
 .stuffs_thumbnails, .stuffs_thumbnails #thumbnails, .one_column {
 	width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width-10 }{/if}{literal}px;
 }
-</style>
+{/literal}{if isset($chronology_calendar)}{literal}
+#subcontent {
+	min-height: inherit;
+}
+{/literal}{/if}{literal}
 
+</style>
 <script type="text/javascript">
 /**
 * jQuery Cookie plugin
