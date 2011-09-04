@@ -9,7 +9,7 @@ Author URI: http://www.planete-flop.fr
 */
 
 
-	
+ 
 $themeconf = array(
   'parent' => 'stripped',
   'name' => 'stripped_black_bloc',
@@ -30,66 +30,85 @@ add_event_handler('loc_begin_page_header', 'set_config_values_stripped_black_blo
 
 function set_config_values_stripped_black_bloc()
 {
-	global $conf, $template;
-	$config = unserialize( $conf['stripped_black_bloc'] );
-	$template->assign( 'stripped_black_bloc', $config );
+  global $conf, $template;
+  $config = unserialize( $conf['stripped_black_bloc'] );
+  $template->assign( 'stripped_black_bloc', $config );
 }
 
 /// EVENT
-add_event_handler('loc_end_index_category_thumbnails', 'MY');
-add_event_handler('loc_end_index_thumbnails', 'MY');
-function MY($tpl_thumbnails_var)
+
+/************************************ thumbnails and category_thumbnails ************************************/
+add_event_handler('loc_end_index_category_thumbnails', 'stripped_black_bloc');
+add_event_handler('loc_end_index_thumbnails', 'stripped_black_bloc');
+function stripped_black_bloc($tpl_thumbnails_var)
 {
-    global $template, $conf;
-		$config = unserialize( $conf['stripped_black_bloc'] );
-		$new_tplvar=array();
-		foreach ($tpl_thumbnails_var as $tplvar)
-		{
-			list($width, $height, $type, $attr) = getimagesize(	$tplvar['TN_SRC'] );
-			$tplvar['TN_WIDTH']=$width;
-			$tplvar['TN_HEIGHT']=$height;
-			if (isset($config['thumbnail']))
-			{
-				switch ($config['thumbnail'])
-				{
-					case 'generated':
-						if (isset($tplvar['FILE_WIDTH']))
-						{
-							$tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/timthumb.php?src=".$tplvar['FILE_PATH']."&w=".$config['thumbnail_width'];
-						}
-						else
-						{
-							$tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/timthumb.php?src=".$tplvar['TN_SRC']."&w=".$config['thumbnail_width'];
-						}
-						$tplvar['TN_HEIGHT']=floor($tplvar['TN_HEIGHT']*($config['thumbnail_width']/$tplvar['TN_WIDTH']));
-						$tplvar['TN_WIDTH']=$config['thumbnail_width'];
-					break;
-					case 'auto':
-						if($tplvar['TN_WIDTH']<=$config['thumbnail_width'])
-						{
-							if (isset($tplvar['FILE_WIDTH']))
-							{
-								$tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/timthumb.php?src=".$tplvar['FILE_PATH']."&w=".$config['thumbnail_width'];
-							}
-							else
-							{
-								$tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/timthumb.php?src=".$tplvar['TN_SRC']."&w=".$config['thumbnail_width'];
-							}
-							$tplvar['TN_HEIGHT']=floor($tplvar['TN_HEIGHT']*($config['thumbnail_width']/$tplvar['TN_WIDTH']));
-							$tplvar['TN_WIDTH']=$config['thumbnail_width'];
-						}
-					break;
-					case 'piwigo':break;
-				}
-			}
-			$new_tplvar[]=$tplvar;
-		}
-		return $new_tplvar;
+  global $template, $conf;
+  $config = unserialize( $conf['stripped_black_bloc'] );
+  $new_tplvar=array();
+  $i=1;
+  foreach ($tpl_thumbnails_var as $tplvar)
+  {
+    list($width, $height, $type, $attr) = getimagesize( $tplvar['TN_SRC'] );
+    $tplvar['TN_WIDTH']=$width;
+    $tplvar['TN_HEIGHT']=$height;
+    if (!isset($tplvar['CAPTION_NB_IMAGES']))
+    {
+      $conf_thumbnail_width=($i==$config['starting_to']) ? $config['column_width']+$config['thumbnail_width'] : $config['thumbnail_width'];
+      $tplvar['TN_CLASS']=($i==$config['starting_to']) ? "bloc_big" : "bloc";
+    }
+    else
+    {
+      $conf_thumbnail_width=$config['thumbnail_width'];
+    }
+    if (isset($config['thumbnail']))
+    {
+      switch ($config['thumbnail'])
+      {
+        case 'generated':
+          if (isset($tplvar['FILE_WIDTH']))
+          {
+           $tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/phpthumb/phpThumb.php?src=../../../../".$tplvar['FILE_PATH']."&w=".$conf_thumbnail_width;
+          }
+          else
+          {
+           $tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/phpthumb/phpThumb.php?src=../../../../".$tplvar['TN_SRC']."&w=".$conf_thumbnail_width;
+          }
+          $tplvar['TN_HEIGHT']=floor($tplvar['TN_HEIGHT']*($conf_thumbnail_width/$tplvar['TN_WIDTH']));
+          $tplvar['TN_WIDTH']=$conf_thumbnail_width;
+         break;
+         case 'auto':
+          if($tplvar['TN_WIDTH']<=$conf_thumbnail_width)
+          {
+            if (isset($tplvar['FILE_WIDTH']))
+            {
+             $tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/phpthumb/phpThumb.php?src=../../../../".$tplvar['FILE_PATH']."&w=".$conf_thumbnail_width;
+            }
+            else
+            {
+             $tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/phpthumb/phpThumb.php?src=../../../../".$tplvar['TN_SRC']."&w=".$conf_thumbnail_width;
+            }
+            $tplvar['TN_HEIGHT']=floor($tplvar['TN_HEIGHT']*($conf_thumbnail_width/$tplvar['TN_WIDTH']));
+            $tplvar['TN_WIDTH']=$conf_thumbnail_width;
+          }
+        break;
+        case 'piwigo':break;
+      }
+    }
+   $new_tplvar[]=$tplvar;
+    if ($i==$config['every_x'])
+    {
+      $i=1;
+    }
+    else {
+      $i++;    
+    }
+  }
+  return $new_tplvar;
 }
-add_event_handler('init', 'MY_init');
-function MY_init()
+add_event_handler('init', 'stripped_black_bloc_init');
+function stripped_black_bloc_init()
 {
-	remove_event_handler('loc_begin_index', 'modify_nb_thumbnail_page');
+  remove_event_handler('loc_begin_index', 'modify_nb_thumbnail_page');
 }
 
 /************************************ index.tpl ************************************/
@@ -108,9 +127,9 @@ function stripped_black_bloc_prefilter_index($content, &$smarty)
   $replacement = "";
   $content = preg_replace($search, $replacement, $content);
   $search = '#\{if \!empty\(\$CONTENT_DESCRIPTION\) \}#';  
-  $replacement = '	<div id="subcontent">
+  $replacement = ' <div id="subcontent">
 
-		{if !empty($CONTENT_DESCRIPTION) }';
+  {if !empty($CONTENT_DESCRIPTION) }';
   $content = preg_replace($search, $replacement, $content);
   $search = '#\{if \!empty\(\$navbar\) \}[\s]*\{include file=\'navigation_bar\.tpl\'\|@get_extent:\'navbar\'\}[\s]*\{/if\}#';  
   $replacement = '';
@@ -118,9 +137,9 @@ function stripped_black_bloc_prefilter_index($content, &$smarty)
 
   $search = '#<\!-- subContent -->#';  
   $replacement = '<!-- subContent -->
-	{if !empty($navbar) }
-		{include file=\'navigation_bar.tpl\'|@get_extent:\'navbar\'}
-	{/if}';
+ {if !empty($navbar) }
+  {include file=\'navigation_bar.tpl\'|@get_extent:\'navbar\'}
+ {/if}';
   return preg_replace($search, $replacement, $content);
 }
 

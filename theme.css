@@ -72,7 +72,7 @@
 #thePicturePage .stuffs_thumbnails {
 	width:auto;
 }
-.bloc {
+.bloc, .bloc_big {
     display: block;
     margin-top: 3px;
 		margin-bottom:3px;
@@ -85,10 +85,10 @@
 .content_block {
 	z-index:999;
 }
-.bloc * {
+.bloc *, .bloc_big * {
     position: relative;
 }
-.bloc .title {
+.bloc .title, .bloc_big .title {
     left: 6px;
     max-width: 138px;
     padding: 7px 10px 6px;
@@ -101,7 +101,7 @@
     margin-right: 5px;
     padding: 7px 10px 8px;
 }
-.bloc a {
+.bloc a, .bloc_big a {
     display: block;
     overflow: hidden;
     position: relative;

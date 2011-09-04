@@ -11,6 +11,12 @@
 .bloc a {
 	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width}{/if}{literal}px;
 }
+.bloc_big {
+	max-width: {/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width}{/if}{literal}px;
+}
+.bloc_big a {
+	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width}{/if}{literal}px;
+}
 .content_block, .bloc_stuff, .two_columns {
 	width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.column_width*2-10}{/if}{literal}px;
 }
@@ -72,7 +78,7 @@ jQuery.cookie = function (key, value, options) {
 function tnb_resize() {
 	$('#subcontent').masonry({
 		columnWidth: {/literal} {if $stripped_black_bloc.column_width}{$stripped_black_bloc.column_width}{/if}{literal}, 
-		itemSelector: '.bloc, .content_block, .bloc_stuff',
+		itemSelector: '.bloc, .bloc_big, .content_block, .bloc_stuff',
 		isAnimated: true
 	});
 }

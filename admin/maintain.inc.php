@@ -7,10 +7,12 @@ function theme_activate($id, $version, &$errors)
   if (!isset($conf['stripped_black_bloc']))
   {
     $config = array(
-	'color_main'						=> 'E6554F',
-	'column_width'						=> 170,
-	'thumbnail_width'						=> 150,
-	'thumbnail'					=> 'piwigo' //generated - auto - piwigo
+  'color_main'            => 'E6554F',
+  'column_width'            => 170,
+  'thumbnail_width'           => 150,
+ 	'every_x'						=> 20,
+	'starting_to'						=> 1,
+ 'thumbnail'         => 'piwigo' //generated - auto - piwigo
       );
       
     $query = "
