@@ -1,5 +1,5 @@
 /**/
-#theCategoryPage #content, #content, #subcontent, #the_page, #thumbnails_block1, #thePicturePage #content {
+#theCategoryPage #content, #content, #subcontent, #the_page, #thumbnails_block1, #thePicturePage #content, #content_cell {
     max-width: none;
 }
 #theCommentsPage #content,
@@ -37,8 +37,12 @@
 .nav_bulle {
   position: relative;
 }
- #subcontent {
+ #content_cell {
     min-height: 490px;
+		display:block;
+		width:auto;
+}
+ #subcontent {
 		display:block;
 		width:auto;
 }
@@ -119,6 +123,7 @@
 }
 #subcontent .stuffs_block #comments ul.thumbnailCategories, #comments ul {
 	padding:20px;
+    display: inline-block;
 }
 #subcontent .stuffs_block, .content_block {
 	padding:0;

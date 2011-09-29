@@ -76,7 +76,7 @@ jQuery.cookie = function (key, value, options) {
     // MASONRY
 
 function tnb_resize() {
-	$('#subcontent').masonry({
+	$('#content_cell').masonry({
 		columnWidth: {/literal} {if $stripped_black_bloc.column_width}{$stripped_black_bloc.column_width}{/if}{literal}, 
 		itemSelector: '.bloc, .bloc_big, .content_block, .bloc_stuff',
 		isAnimated: true
