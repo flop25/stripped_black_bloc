@@ -18,7 +18,10 @@ $themeconf = array(
   'admin_icon_dir' => 'themes/default/icon/admin',
   'mime_icon_dir' => 'themes/default/icon/mimetypes/',
   'local_head' => 'local_head.tpl',
+  'load_parent_local_head' => true,
 );
+global $stripped;
+$stripped['themeStyle']='original';
 
 load_language('theme.lang', PHPWG_THEMES_PATH.'stripped_black_bloc/');
 
