@@ -118,6 +118,13 @@
     margin-right: 5px;
     padding: 7px 10px 8px;
 }
+.titrePage .categoryActionsContainer {
+    float: none;
+}
+.categoryActions {
+    display: inline;
+    float: right;
+}
 #thumb_navigation {
 	display:none
 }

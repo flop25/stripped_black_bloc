@@ -95,30 +95,30 @@ jQuery(document).ready(function(jQuery){
 		// if cookie says the menu is hiding, keep it hidden!
 	{/literal} {if $stripped.hideMenu} {literal} 
 	if (sidemenu == 'showing') {
-		jQuery("#subcontent").css({'margin-left' : '20em'});
+		jQuery("#content_cell").css({'margin-left' : '20em'});
 		isdisplayed=true;
 	}
 	else {
-		jQuery("#subcontent").css({'margin-left' : '0'});
+		jQuery("#content_cell").css({'margin-left' : '0'});
 		isdisplayed=false;
 	}
 	{/literal} {else} {literal} 
 	if (sidemenu == 'hiding') {
-		jQuery("#subcontent").css({'margin-left' : '0'});
+		jQuery("#content_cell").css({'margin-left' : '0'});
 		isdisplayed=false;
 	}
 	else {
-		jQuery("#subcontent").css({'margin-left' : '20em'});
+		jQuery("#content_cell").css({'margin-left' : '20em'});
 		isdisplayed=true;
 	}
 	{/literal} {/if} {literal} 
 	// creates a variable with the contents of the cookie side-menu
 	jQuery("#menuswitcher").click(function(){
 		if (jQuery("#menubar").is(":hidden") || isdisplayed==false ) {
-			jQuery("#subcontent").css({'margin-left' : '20em'});
+			jQuery("#content_cell").css({'margin-left' : '20em'});
 			isdisplayed=true;
 		} else {
-			jQuery("#subcontent").css({'margin-left' : '0'});
+			jQuery("#content_cell").css({'margin-left' : '0'});
 			isdisplayed=false;
 		}
 	});

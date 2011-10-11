@@ -135,8 +135,9 @@ function stripped_black_bloc_prefilter_index($content, &$smarty)
   $replacement = '';
   $content = preg_replace($search, $replacement, $content);
 
-  $search = '#<\!-- subContent -->#';  
-  $replacement = '<!-- subContent -->
+  $search = '#{\$PLUGIN_INDEX_CONTENT_AFTER}</div>{/if}.*</div>#s';  
+  $replacement = '{$PLUGIN_INDEX_CONTENT_AFTER}</div>{/if}
+	</div>
  {if !empty($navbar) }
   {include file=\'navigation_bar.tpl\'|@get_extent:\'navbar\'}
  {/if}';
