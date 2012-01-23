@@ -51,7 +51,7 @@ function stripped_black_bloc($tpl_thumbnails_var)
   $i=1;
   foreach ($tpl_thumbnails_var as $tplvar)
   {
-    list($width, $height, $type, $attr) = getimagesize( $tplvar['TN_SRC'] );
+    list($width, $height, $type, $attr) = getimagesize( str_replace("../", "", $tplvar['TN_SRC']) );
     $tplvar['TN_WIDTH']=$width;
     $tplvar['TN_HEIGHT']=$height;
     if (!isset($tplvar['CAPTION_NB_IMAGES']))
@@ -70,11 +70,11 @@ function stripped_black_bloc($tpl_thumbnails_var)
         case 'generated':
           if (isset($tplvar['FILE_WIDTH']))
           {
-           $tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/phpthumb/phpThumb.php?src=../../../../".$tplvar['FILE_PATH']."&w=".$conf_thumbnail_width;
+           $tplvar['TN_SRC']=get_root_url().PHPWG_THEMES_PATH."stripped_black_bloc/library/phpthumb/phpThumb.php?src=../../../../".$tplvar['FILE_PATH']."&w=".$conf_thumbnail_width;
           }
           else
           {
-           $tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/phpthumb/phpThumb.php?src=../../../../".$tplvar['TN_SRC']."&w=".$conf_thumbnail_width;
+           $tplvar['TN_SRC']=get_root_url().PHPWG_THEMES_PATH."stripped_black_bloc/library/phpthumb/phpThumb.php?src=../../../../".str_replace("../", "", $tplvar['TN_SRC'])."&w=".$conf_thumbnail_width;
           }
           $tplvar['TN_HEIGHT']=floor($tplvar['TN_HEIGHT']*($conf_thumbnail_width/$tplvar['TN_WIDTH']));
           $tplvar['TN_WIDTH']=$conf_thumbnail_width;
@@ -84,11 +84,11 @@ function stripped_black_bloc($tpl_thumbnails_var)
           {
             if (isset($tplvar['FILE_WIDTH']))
             {
-             $tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/phpthumb/phpThumb.php?src=../../../../".$tplvar['FILE_PATH']."&w=".$conf_thumbnail_width;
+             $tplvar['TN_SRC']=get_root_url().PHPWG_THEMES_PATH."stripped_black_bloc/library/phpthumb/phpThumb.php?src=../../../../".$tplvar['FILE_PATH']."&w=".$conf_thumbnail_width;
             }
             else
             {
-             $tplvar['TN_SRC']=PHPWG_THEMES_PATH."stripped_black_bloc/library/phpthumb/phpThumb.php?src=../../../../".$tplvar['TN_SRC']."&w=".$conf_thumbnail_width;
+             $tplvar['TN_SRC']=get_root_url().PHPWG_THEMES_PATH."stripped_black_bloc/library/phpthumb/phpThumb.php?src=../../../../".str_replace("../", "", $tplvar['TN_SRC'])."&w=".$conf_thumbnail_width;
             }
             $tplvar['TN_HEIGHT']=floor($tplvar['TN_HEIGHT']*($conf_thumbnail_width/$tplvar['TN_WIDTH']));
             $tplvar['TN_WIDTH']=$conf_thumbnail_width;
