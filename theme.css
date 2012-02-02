@@ -37,6 +37,9 @@
 .nav_bulle {
   position: relative;
 }
+.categoryActions .menuf .flags {
+    margin-top: 5px;
+}
 .titrePage {
     height: 32px;
 }
