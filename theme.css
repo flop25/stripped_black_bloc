@@ -15,7 +15,7 @@
 #theTagsPage #content,
 #theNBMPage #content
 {
-	width:auto;
+	width:100%;
 }
 /*
 #menubar_container {
@@ -37,6 +37,13 @@
 .nav_bulle {
   position: relative;
 }
+.titrePage {
+    height: 32px;
+}
+.titrePage img {
+    max-height: 16px;
+    max-width: 16px;
+}
  #content_cell {
     min-height: 490px;
 		display:block;
@@ -46,10 +53,20 @@
 		display:block;
 		width:auto;
 }
+.subcontent .stuffs_block, .content_block {
+    max-width:none;
+}
+.content_block {
+    border:none;
+}
+.content_block #comments ul {
+    display: block;
+}
+
 #menubar {
     display: inline;
     float: left;
-    margin: 0 0 10px 1em;
+    margin: 0 10px 10px 1em;
     padding: 0;
     width: 18em;
 }  
@@ -119,7 +136,7 @@
     padding: 7px 10px 8px;
 }
 .titrePage .categoryActionsContainer {
-    float: none;
+ /*   float: none; */
 }
 .categoryActions {
     display: inline;
@@ -183,7 +200,7 @@ a {
 	background: none;
 	border:none;
 }
-.content_block, .bloc_stuff {
+.bloc_stuff {
 	border: 1px solid #424242;
 }
 #thePicturePage .left_block, #thePicturePage .right_block, #thePicturePage .middle_block, #content {
@@ -204,7 +221,7 @@ a {
 #menubar dd{
 	font-weight:normal;
 }
-.browsePath, #theHeader, .titrePage .categoryActions, #imageTitle, .randomButtons, #footer_left, #copyright {
+.browsePath, #theHeader, #imageTitle, .randomButtons, #footer_left, #copyright {
 	color: #FFFFFF;
 	background-image: url("img/btn.png");
 	background-color:transparent;
@@ -218,6 +235,23 @@ a {
 	border: 1px solid #424242;
 	padding:5px;
 }
+.titrePage .categoryActions {
+	color: #FFFFFF;
+	background-image: url("img/btn.png");
+	background-color:transparent;
+	border-radius: 5px 5px 5px 5px;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: normal;
+	border: 1px solid #424242;
+}
+.categoryActions li {
+  	padding:5px;
+}
+
 #tabZone {
 	color: #FFFFFF;
 	background-image: url("img/btn.png");

@@ -123,7 +123,7 @@ function stripped_black_bloc_index()
 }
 function stripped_black_bloc_prefilter_index($content, &$smarty)
 {
-  $search = '#Menu</span>#';  
+  $search = "#\{\'Menu\'\|@translate\}#";  
   $replacement = "{'Show/hide menu'|@translate}</span>";
   $content = preg_replace($search, $replacement, $content);
   $search = '#<div id="subcontent">#';  
