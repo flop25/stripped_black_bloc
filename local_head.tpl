@@ -1,5 +1,5 @@
 {if ($BODY_ID=='theCategoryPage')}
-{combine_script id='jquery.masonry' load='header' require='jquery' path='themes/stripped_black_bloc/js/masonry.js'}
+{combine_script id='jquery.isotope' load='header' require='jquery' path='themes/stripped_black_bloc/js/isotope.js'}
 {html_head}{literal}
 <style>
 #theHeader a, .titrePage a, .footer_login a, .navigationBar a {
@@ -8,7 +8,7 @@
 .bloc {
 	max-width: {/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width}{/if}{literal}px;
 }
-.bloc a {
+.bloc a{
 	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width}{/if}{literal}px;
 }
 .bloc_big {
@@ -76,8 +76,10 @@ jQuery.cookie = function (key, value, options) {
     // MASONRY
 
 function tnb_resize() {
-	$('#content_cell').masonry({
-		columnWidth: {/literal} {if $stripped_black_bloc.column_width}{$stripped_black_bloc.column_width}{/if}{literal}, 
+	$('#content_cell').isotope({
+	 masonry: {
+		columnWidth: {/literal} {if $stripped_black_bloc.column_width}{$stripped_black_bloc.column_width}{/if}{literal}
+ },
 		itemSelector: '.bloc, .bloc_big, .content_block, .bloc_stuff',
 		isAnimated: true
 	});
