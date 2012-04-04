@@ -4,8 +4,7 @@
 
 global $conf;
 
-if (!isset($conf['stripped_black_bloc']))
-  include(PHPWG_THEMES_PATH.'stripped_black_bloc/admin/upgrade.inc.php');
+include(PHPWG_THEMES_PATH.'stripped_black_bloc/admin/upgrade.inc.php');
 
 load_language('theme.lang', PHPWG_THEMES_PATH.'stripped_black_bloc/');
 
@@ -32,7 +31,7 @@ if(isset($_POST['submit_stripped_black_bloc']))
 	}
 	$config_send['every_x']=(isset($_POST['f_every_x'])) ? $_POST['f_every_x'] : 20;
 	$config_send['starting_to']=(isset($_POST['f_starting_to'])) ? $_POST['f_starting_to'] : 1;
-	$config_send['thumbnail']=(isset($_POST['f_thumbnail'])) ? $_POST['f_thumbnail'] : 'piwigo';
+	$config_send['catthumb']=(isset($_POST['f_catthumb'])) ? $_POST['f_catthumb'] : 'none';
 	conf_update_param('stripped_black_bloc', pwg_db_real_escape_string(serialize($config_send)));
 
   array_push($page['infos'], l10n('Information data registered in database'));

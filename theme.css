@@ -208,7 +208,7 @@ a {
     color: #FFFFFF;
     text-decoration: none;
 }
-.masonry-brick, .bloc .title, .nav_bulle {
+.masonry-brick, .bloc .title, .bloc_big .title, .nav_bulle {
 	color: #FFFFFF;
 	background-image: url("img/btn.png");
 	border-radius: 5px 5px 5px 5px;
@@ -221,7 +221,7 @@ a {
 	white-space: normal;
 
 }
-.bloc a {
+.bloc a, .bloc_big a {
     border-radius: 5px 5px 5px 5px;
 }
 #thePicturePage .left_block, #thePicturePage .right_block, #thePicturePage .middle_block, #content {
