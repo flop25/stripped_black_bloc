@@ -23,6 +23,12 @@
 .stuffs_thumbnails, .stuffs_thumbnails #thumbnails, .one_column {
 	width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width-10 }{/if}{literal}px;
 }
+.bloc, .bloc_big {
+{/literal}
+    margin-top: {math equation="( x - y - 10)/2" y=$stripped_black_bloc.thumbnail_width x=$stripped_black_bloc.column_width}px;
+		margin-bottom:{math equation="( x - y - 10)/2" y=$stripped_black_bloc.thumbnail_width x=$stripped_black_bloc.column_width}px;
+{literal}
+}
 {/literal}{if isset($chronology_calendar)}{literal}
 #subcontent {
 	min-height: inherit;
