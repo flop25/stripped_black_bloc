@@ -38,6 +38,10 @@ if(isset($_POST['submit_stripped_black_bloc']))
 
   load_conf_from_db();
 }
+if(!isset($conf['stripped']))
+{
+  array_push($page['errors'], l10n('The parent-theme Stripped need to be enabled in order to use its parameters'));
+}
 
 $template->set_filenames(array(
     'theme_admin_content' => dirname(__FILE__) . '/admin.tpl'));

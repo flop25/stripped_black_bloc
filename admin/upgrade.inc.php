@@ -16,7 +16,7 @@ if (!isset($conf['stripped_black_bloc']))
   );
   $query = "
 INSERT INTO " . CONFIG_TABLE . " (param,value,comment)
-VALUES ('stripped_black_bloc' , '".pwg_db_real_escape_string(serialize($config))."' , 'color_main#column_width#thumbnail_width#thumbnail(generated - auto - piwigo)');";
+VALUES ('stripped_black_bloc' , '".pwg_db_real_escape_string(serialize($config))."' , 'color_main#column_width#thumbnail_width#catthumb(none - same - all)');";
   pwg_query($query);
   load_conf_from_db();
 }

@@ -1,5 +1,5 @@
 <?php
-
+$lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'The parent-theme Stripped need to be enabled in order to use its parameters';
 $lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns, Configuration Page';
 $lang['Page'] = 'Page';
 $lang['color main'] = "Not grey color :";
