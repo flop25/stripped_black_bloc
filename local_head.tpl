@@ -5,7 +5,7 @@
 #theHeader a, .titrePage a, .footer_login a, .navigationBar a {
 	color: {/literal}{if $stripped_black_bloc.color_main}#{$stripped_black_bloc.color_main}{/if}{literal};
 }
-.bloc {
+.bloc, .gmapsMarkup {
 	max-width: {/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width}{/if}{literal}px;
 }
 .bloc a{

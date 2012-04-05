@@ -15,6 +15,7 @@ $themeconf = array(
   'name' => 'stripped_black_bloc',
   'theme_dir' => 'stripped_black_bloc',
   'icon_dir' => 'themes/stripped/icon',
+  'img_dir' => 'themes/stripped_black_bloc/img',
   'admin_icon_dir' => 'themes/default/icon/admin',
   'mime_icon_dir' => 'themes/default/icon/mimetypes/',
   'local_head' => 'local_head.tpl',
