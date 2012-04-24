@@ -28,4 +28,6 @@ $lang['always generate big thumbnails'] = 'vždy generovat velké náhledy';
 $lang['color main'] = 'Barva jiná než šedá:';
 $lang['don\'t generate big thumbnails'] = 'negenerovat velké náhledy';
 $lang['use the same config as above'] = 'použít stejné nastavení jako výše';
+$lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns, Konfigurační strana';
+$lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'Nadřazené téma Stripped musí být aktivní, aby bylo možné použít jeho parametry';
 ?>
