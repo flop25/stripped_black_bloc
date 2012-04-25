@@ -30,4 +30,6 @@ $lang['don\'t generate big thumbnails'] = 'negenerovat velké náhledy';
 $lang['use the same config as above'] = 'použít stejné nastavení jako výše';
 $lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns, Konfigurační strana';
 $lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'Nadřazené téma Stripped musí být aktivní, aby bylo možné použít jeho parametry';
+$lang['(it need to be inferior than the width of columns)'] = '(musí být menší než šířka sloupců)';
+$lang['(set 0 to disable)'] = '(nastavte o pro zrušení)';
 ?>
