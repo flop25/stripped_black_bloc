@@ -32,4 +32,7 @@ $lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns, Konfigura
 $lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'Nadřazené téma Stripped musí být aktivní, aby bylo možné použít jeho parametry';
 $lang['(it need to be inferior than the width of columns)'] = '(musí být menší než šířka sloupců)';
 $lang['(set 0 to disable)'] = '(nastavte o pro zrušení)';
+$lang['... starting to the position number'] = '...začít od pozice číslo';
+$lang['About big thumbnails, for the albums :'] = 'O velkých náhledech pro alba:';
+$lang['Create a big thumbnail every'] = 'Vytvořit velký náhled každý';
 ?>
