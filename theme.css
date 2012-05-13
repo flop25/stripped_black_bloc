@@ -224,6 +224,11 @@ a {
 .bloc a, .bloc_big a {
     border-radius: 5px 5px 5px 5px;
 }
+.thumbnails .bloc a, .thumbnails .bloc_big a {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 5px 5px rgba(0,0,0,0.75);
+}
 #thePicturePage .left_block, #thePicturePage .right_block, #thePicturePage .middle_block, #content {
   background: transparent
 }
