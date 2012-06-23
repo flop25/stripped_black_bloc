@@ -20,7 +20,7 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
-$lang['(it need to be inferior than the width of columns)'] = '(kolon genişliğinden daha aşağıda olması gereklidir)';
+$lang['(it need to be inferior than the width of columns)'] = '(kolon genişliğinden daha dar olması gereklidir)';
 $lang['(set 0 to disable)'] = '(pasifleştirmek için 0 seçin)';
 $lang['... starting to the position number'] = '...pozisyon numarası ile başlıyor';
 $lang['About big thumbnails, for the albums :'] = 'Albümler için büyük pul resimleri hakkında:';
