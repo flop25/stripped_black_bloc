@@ -129,6 +129,9 @@
 #thePicturePage .stuffs_thumbnails {
 	width:auto;
 }
+.gmapsMarkup {
+width: auto !important;
+}
 .bloc, .bloc_big {
     display: block;
     margin-top: 3px;
