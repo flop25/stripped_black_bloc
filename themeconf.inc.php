@@ -84,6 +84,7 @@ function stripped_black_bloc_index()
 }
 function stripped_black_bloc_prefilter_index($content, &$smarty)
 {
+  global $page;
   $search = "#\{\'Menu\'\|@translate\}#";  
   $replacement = "{'Show/hide menu'|@translate}</span>";
   $content = preg_replace($search, $replacement, $content);
@@ -99,13 +100,35 @@ function stripped_black_bloc_prefilter_index($content, &$smarty)
   $replacement = '';
   $content = preg_replace($search, $replacement, $content);
 
-  $search = '#{\$PLUGIN_INDEX_CONTENT_AFTER}</div>{/if}.*</div>#s';  
+  $search = '#\{\$PLUGIN_INDEX_CONTENT_AFTER\}</div>\{/if\}.*</div>#s';  
   $replacement = '{$PLUGIN_INDEX_CONTENT_AFTER}</div>{/if}
 	</div>
- {if !empty($navbar) }
+  {if !empty($navbar) }
   {include file=\'navigation_bar.tpl\'|@get_extent:\'navbar\'}
- {/if}';
-  return preg_replace($search, $replacement, $content);
+  {/if}';
+  $content = preg_replace($search, $replacement, $content);
+  if ( isset($page['chronology_view']))
+  {
+    $search = '#\{if isset\(\$chronology\.TITLE\)#s';
+    $replacement = '<div class="bloc_stuff">
+{if isset($chronology.TITLE)';
+    $content = preg_replace($search, $replacement, $content);
+    $search = '#\{if \!empty\(\$PLUGIN_INDEX_CONTENT_BEGIN\)\}#s';
+    $replacement = '</div>
+{if !empty($PLUGIN_INDEX_CONTENT_BEGIN)}';
+    $content = preg_replace($search, $replacement, $content);
+    $search = '#calendar_block"#s';
+    if ($page['chronology_view']=='calendar')
+    {
+     $replacement = 'calendar_block" class="bloc_stuff" style="width:100%;padding:5px"';
+    }
+    else {
+     $replacement = 'calendar_block" class="bloc_stuff" style="padding:5px 0"';
+    }
+    $content = preg_replace($search, $replacement, $content);
+  }
+
+  return $content;
 }
 
 ?>

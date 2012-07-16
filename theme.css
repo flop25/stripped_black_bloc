@@ -197,7 +197,9 @@ width: auto !important;
 #theHeader h1 {
 	padding:0;
 }
-	
+.calendarBar span {
+    float: left;
+}
 /****************
  color backgroung etc 
  ************************/

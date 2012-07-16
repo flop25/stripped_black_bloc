@@ -2,7 +2,7 @@
 {combine_script id='jquery.isotope' load='header' require='jquery' path='themes/stripped_black_bloc/js/isotope.js'}
 {combine_script id='jquery.cookie' load='header' require='jquery' path='themes/stripped_black_bloc/js/jquery.ck.min.js'}
 {html_style}{literal}
-#theHeader a, .titrePage a, .footer_login a, .navigationBar a {
+#theHeader a, .titrePage a, .footer_login a, .navigationBar a, #calendar_block A  {
 	color: {/literal}{if $stripped_black_bloc.color_main}#{$stripped_black_bloc.color_main}{/if}{literal};
 }
 .bloc, .gmapsMarkup {
@@ -18,7 +18,7 @@
 	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width}{/if}{literal}px;
 }
 .content_block, .bloc_stuff, .two_columns {
-	width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.column_width*2-10}{/if}{literal}px;
+	width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.column_width*2-20}{/if}{literal}px;
 }
 .stuffs_thumbnails, .stuffs_thumbnails #thumbnails, .one_column {
 	width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width-10 }{/if}{literal}px;
