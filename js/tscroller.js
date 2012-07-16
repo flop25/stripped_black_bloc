@@ -1,6 +1,11 @@
 /*
 Don't use directly. Compile on http://closure-compiler.appspot.com/home
 */
+ RVTS.doAutoScroll = undefined;
+ RVTS.checkAutoScroll = undefined;
+ RVTS.engage = undefined;
+ RVTS.loadUp = undefined;
+
 if (window.jQuery && window.RVTS)
 (function($){
 $('.navigationBar').hide();
