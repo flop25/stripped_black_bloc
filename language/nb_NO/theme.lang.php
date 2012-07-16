@@ -21,4 +21,9 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 $lang['(set 0 to disable)'] = '(sett 0 for å deaktivere)';
+$lang['(it need to be inferior than the width of columns)'] = '(må være mindre enn bredden på kolonnene)';
+$lang['... starting to the position number'] = '...begynner med posisjonnummer';
+$lang['Create a big thumbnail every'] = 'Lag et stort miniatyrbilde hver';
+$lang['Displaying options'] = 'Visningsalternativer';
+$lang['Page'] = 'Side';
 ?>
