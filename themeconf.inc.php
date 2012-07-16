@@ -47,6 +47,16 @@ add_event_handler('loc_end_index_thumbnails', 'stripped_black_bloc');
 function stripped_black_bloc($tpl_thumbnails_var)
 {
   global $template, $conf;
+  if (defined('RVTS_VERSION'))
+  {
+    $template->func_combine_script( array(
+        'id'=> 'sc_tscroller',
+        'load'=> 'async',
+        'path'=> PHPWG_THEMES_PATH.'stripped_black_bloc/js/tscroller.min.js',
+        'require' => 'jquery',
+      ), $template->smarty);
+  }
+  
   $config = unserialize( $conf['stripped_black_bloc'] );
   $template->assign( 'stripped_black_bloc', $config );
   $new_tplvar=array();
