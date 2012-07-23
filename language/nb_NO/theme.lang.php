@@ -26,4 +26,13 @@ $lang['... starting to the position number'] = '...begynner med posisjonnummer';
 $lang['Create a big thumbnail every'] = 'Lag et stort miniatyrbilde hver';
 $lang['Displaying options'] = 'Visningsalternativer';
 $lang['Page'] = 'Side';
+$lang['About big thumbnails, for the albums :'] = 'Om store miniatyrbilder, for albumene';
+$lang['Stripped & Columns Theme Configuration'] = 'Stripped & columns, konfigurasjonside';
+$lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'Foreldretemaet Stripped må være aktivert for å kunne bruke dets parametere';
+$lang['Width of columns'] = 'Bredden på kolonnene';
+$lang['Width of thumbnails'] = 'Bredden på miniatybildene';
+$lang['always generate big thumbnails'] = 'generer alltid store miniatyrbilder';
+$lang['color main'] = 'Ikke grå farge:';
+$lang['don\'t generate big thumbnails'] = 'ikke generer store miniatyrbilder';
+$lang['use the same config as above'] = 'bruk samme konfigurasjon som over';
 ?>
