@@ -10,11 +10,13 @@
       {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_big, $thumbnail.src_image)}
     {/if}
     {assign var='size' value=$derivative->get_size()}
- <div class="{$thumbnail.TN_CLASS}">
-<a href="{$thumbnail.URL}" style="background: url({if $derivative->is_cached()}{$derivative->get_url()}{else}{$ROOT_URL}{$themeconf.img_dir}/loading.gif{/if}) no-repeat scroll center center transparent; height: {$size[1]}px; width: {$size[0]}px; opacity: 0.75;" {if !$derivative->is_cached()}data-src="{$derivative->get_url()}"{/if}>
+<div class="{$thumbnail.TN_CLASS}">
+  <a href="{$thumbnail.URL}" style="background: url({if $derivative->is_cached()}{$derivative->get_url()}{else}{$ROOT_URL}{$themeconf.img_dir}/loading.gif{/if}) no-repeat scroll center center transparent; height: {$size[1]}px; width: {$size[0]}px; opacity: 0.75;" {if !$derivative->is_cached()}data-src="{$derivative->get_url()}"{/if}>
     {if isset($thumbnail.NAME)}{$thumbnail.NAME}{else}{$thumbnail.TN_TITLE}{/if}
-    </a>
-    <div class="title">{if isset($thumbnail.NAME)}{$thumbnail.NAME}{/if}</div>
-  </div>
+  </a>
+  {if $SHOW_THUMBNAIL_CAPTION }
+  <div class="title">{if isset($thumbnail.NAME)}{$thumbnail.NAME}{/if}</div>
+  {/if}
+</div>
   {/foreach}
 {/if}
