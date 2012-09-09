@@ -8,7 +8,7 @@
 .bloc, .gmapsMarkup {
 	max-width: {/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width}{/if}{literal}px;
 }
-.bloc a{
+.bloc a {
 	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width}{/if}{literal}px;
 }
 .bloc_big {
@@ -16,6 +16,12 @@
 }
 .bloc_big a {
 	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width}{/if}{literal}px;
+}
+.bloc_wide {
+	max-width: {/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width+$stripped_black_bloc.column_width}{/if}{literal}px;
+}
+.bloc_wide a {
+	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width+$stripped_black_bloc.column_width}{/if}{literal}px;
 }
 .content_block, .bloc_stuff, .two_columns {
 	width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.column_width*2-20}{/if}{literal}px;

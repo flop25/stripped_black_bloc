@@ -44,6 +44,19 @@ FORM.properties SPAN.property {
     </li>
     <li>
       <br><br>
+      <label>{'About portrait pictures :'|@translate}</label>
+      <br><br>
+     <label>
+        <input type="radio" name="f_portrait_limitation" id="portrait_limitation" value="none"  {if $options.portrait_limitation=="none"}checked{/if}>
+        &nbsp;{'No Maximum Height, the width is the one set above'|@translate}</label>
+      <br>
+      <label>
+        <input type="radio" name="f_portrait_limitation" id="portrait_limitation" value="yes" {if $options.portrait_limitation=="yes"}checked{/if}>
+        &nbsp;{'Use the width parameter above as a maximum heigth'|@translate}</label>
+      <br>
+    </li>
+    <li>
+      <br><br>
         <label for="thumbnail">{'About big thumbnails, for the albums :'|@translate}</label>
       <br><br>
       <label>

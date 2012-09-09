@@ -12,7 +12,8 @@ function theme_activate($id, $version, &$errors)
   'thumbnail_width'           => 150,
  	'every_x'						=> 20,
 	'starting_to'						=> 1,
-  'catthumb'         => 'none' //none - same - all
+  'catthumb'         => 'none', //none - same - all
+  'portrait_limitation'         => 'none' //none - yes
       );
       
     $query = "

@@ -12,7 +12,8 @@ if (!isset($conf['stripped_black_bloc']))
   'thumbnail_width'           => 150,
   'every_x'           => 20,
   'starting_to'           => 1,
-  'catthumb'         => 'none' //none - same - all
+  'catthumb'         => 'none', //none - same - all
+  'portrait_limitation'         => 'none' //none - yes
   );
   $query = "
 INSERT INTO " . CONFIG_TABLE . " (param,value,comment)
@@ -20,28 +21,17 @@ VALUES ('stripped_black_bloc' , '".pwg_db_real_escape_string(serialize($config))
   pwg_query($query);
   load_conf_from_db();
 }
-elseif (count(unserialize( $conf['stripped_black_bloc'] ))!=6)
+elseif (count(unserialize( $conf['stripped_black_bloc'] ))!=7)
 {
+  $conff=unserialize($conf['stripped_black_bloc']);
   $config = array(
-  'color_main'            => 'E6554F',
-  'column_width'            => 170,
-  'thumbnail_width'           => 150,
-  'every_x'           => 20,
-  'starting_to'           => 1,
-  'catthumb'         => 'none' //none - same - all
-  );
-  conf_update_param('stripped_black_bloc', pwg_db_real_escape_string(serialize($config)));
-  load_conf_from_db();
-}
-elseif ($conff=unserialize($conf['stripped_black_bloc']) and ( !isset($conff['catthumb']) or empty($conff['catthumb'])) )
-{
-  $config = array(
-  'color_main'            => $conff['color_main'],
-  'column_width'            => $conff['column_width'],
-  'thumbnail_width'           => $conff['thumbnail_width'],
-  'every_x'           => $conff['every_x'],
-  'starting_to'           => $conff['starting_to'],
-  'catthumb'         => 'none' //none - same - all
+  'color_main'            => (isset($conff['color_main'])) ? $conff['color_main'] :'E6554F',
+  'column_width'            => (isset($conff['column_width'])) ? $conff['column_width'] :170,
+  'thumbnail_width'           => (isset($conff['thumbnail_width'])) ? $conff['thumbnail_width'] :150,
+  'every_x'           => (isset($conff['every_x'])) ? $conff['every_x'] : 20,
+  'starting_to'           => (isset($conff['starting_to'])) ? $conff['starting_to'] :1,
+  'catthumb'         => (isset($conff['catthumb'])) ? $conff['catthumb'] :'none', //none - same - all
+  'portrait_limitation'         => (isset($conff['portrait_limitation'])) ? $conff['portrait_limitation'] :'none' //none - yes
   );
   conf_update_param('stripped_black_bloc', pwg_db_real_escape_string(serialize($config)));
   load_conf_from_db();
