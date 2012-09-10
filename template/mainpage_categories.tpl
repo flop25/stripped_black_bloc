@@ -6,39 +6,40 @@
 
 {foreach from=$category_thumbnails item=cat}
 {assign var=triplehigh value= $cat.representative.height+$cat.representative.height+$cat.representative.height}
-  {if $cat.representative.width gt $triplehigh}
+  {if ($cat.representative.width > $triplehigh) and ($cat.representative.width>$stripped_black_bloc.column_width+$stripped_black_bloc.column_width+$stripped_black_bloc.column_width)}
     {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_wide, $cat.representative.src_image)}
-    {assign var='size' value=$derivative->get_size()}
-	<div class="bloc twocol album">
-			<a href="{$cat.URL}" style="background: url({$derivative->get_url()}) no-repeat scroll center center transparent; height: {$size[1]}px; width: {$size[0]}px; opacity: 0.75;" >
-				{$cat.NAME}
-			</a>
-				<div class="title">{$cat.NAME}</div>
-	</div>
-  {else}
-    {if $cat.representative.width < $cat.representative.height and $stripped_black_bloc.catthumb=="yes"}
+    {assign var=TN_CLASS value="twocol"}
+  {elseif ($cat.representative.width > $triplehigh) and ($cat.representative.width>$stripped_black_bloc.column_width+$stripped_black_bloc.column_width)}
+    {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_wide, $cat.representative.src_image)}
+    {assign var=TN_CLASS value="twocol"}
+  {elseif $cat.representative.width < $cat.representative.height and $stripped_black_bloc.catthumb=="yes"}
       {if $cat.TN_CLASS=="twocol" and $stripped_black_bloc.catthumb=="same"}
         {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_big_vert, $cat.representative.src_image)}
+        {assign var=TN_CLASS value="twocol"}
       {elseif $stripped_black_bloc.catthumb=="all"}
         {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_big_vert, $cat.representative.src_image)}
+        {assign var=TN_CLASS value="twocol"}
       {else}
         {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_vert, $cat.representative.src_image)}
+        {assign var=TN_CLASS value="onecol"}
       {/if}
+  {else}
+    {if $cat.TN_CLASS=="twocol" and $stripped_black_bloc.catthumb=="same"}
+      {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_big, $cat.representative.src_image)}
+      {assign var=TN_CLASS value="twocol"}
+    {elseif $stripped_black_bloc.catthumb=="all"}
+      {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_big, $cat.representative.src_image)}{assign var=TN_CLASS value="twocol"}
+      {assign var=TN_CLASS value="twocol"}
     {else}
-      {if $cat.TN_CLASS=="twocol" and $stripped_black_bloc.catthumb=="same"}
-        {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_big, $cat.representative.src_image)}
-      {elseif $stripped_black_bloc.catthumb=="all"}
-        {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_big, $cat.representative.src_image)}
-      {else}
-        {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc, $cat.representative.src_image)}
-        {/if}
+      {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc, $cat.representative.src_image)}
+      {assign var=TN_CLASS value="onecol"}
     {/if}
+  {/if}
     {assign var='size' value=$derivative->get_size()}
-	<div class="bloc {if $stripped_black_bloc.catthumb=="all"}twocol{else}{$cat.TN_CLASS}{/if} album">
+	<div class="bloc {$TN_CLASS} album">
 			<a href="{$cat.URL}" style="background: url({$derivative->get_url()}) no-repeat scroll center center transparent; height: {$size[1]}px; width: {$size[0]}px; opacity: 0.75;" >
 				{$cat.NAME}
 			</a>
 				<div class="title">{$cat.NAME}</div>
 	</div>
-  {/if}
   {/foreach}
