@@ -124,7 +124,7 @@
 	
 }
 .bloc_stuff {
-	z-index:999;
+	z-index:50;
 }
 #thePicturePage .stuffs_thumbnails {
 	width:auto;
@@ -137,16 +137,16 @@ width: auto !important;
     margin-top: 3px;
 		margin-bottom:3px;
     padding: 5px;
-		z-index:999;
+		z-index:50;
 }
 .content_block, .bloc_stuff, #subcontent .middle_block {
     margin: 3px !important;
 }
 .content_block {
-	z-index:999;
+	z-index:50;
 }
 .menuf ul li ul {
-    z-index: 1100;
+    z-index: 100;
 }
 .bloc * {
     position: relative;
