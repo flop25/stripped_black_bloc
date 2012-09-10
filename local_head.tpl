@@ -1,35 +1,44 @@
 {if ($BODY_ID=='theCategoryPage')}
 {combine_script id='jquery.isotope' load='header' require='jquery' path='themes/stripped_black_bloc/js/isotope.js'}
 {combine_script id='jquery.cookie' load='header' require='jquery' path='themes/stripped_black_bloc/js/jquery.ck.min.js'}
+{assign var='one_column' value=$stripped_black_bloc.thumbnail_width}
+{assign var='two_columns' value=$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width}
+{assign var='three_columns' value=$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width+$stripped_black_bloc.column_width}
 {html_style}{literal}
-#theHeader a, .titrePage a, .footer_login a, .navigationBar a, #calendar_block A  {
+#theHeader a, .titrePage a, .footer_login a, .navigationBar a, #calendar_block A {
 	color: {/literal}{if $stripped_black_bloc.color_main}#{$stripped_black_bloc.color_main}{/if}{literal};
 }
-.bloc, .gmapsMarkup {
-	max-width: {/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width}{/if}{literal}px;
+.album a {
+  border: 1.5px solid #{/literal}{$stripped_black_bloc.color_main}{literal};
+  margin:-2px;
 }
-.bloc a {
-	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width}{/if}{literal}px;
+
+.onecol, .gmapsMarkup, .onecol a {
+	max-width: {/literal}{$one_column}{literal}px;
 }
-.bloc_big {
-	max-width: {/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width}{/if}{literal}px;
+.twocol, .twocol a {
+	max-width: {/literal}{$two_columns}{literal}px;
 }
-.bloc_big a {
-	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width}{/if}{literal}px;
-}
-.bloc_wide {
-	max-width: {/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width+$stripped_black_bloc.column_width}{/if}{literal}px;
-}
-.bloc_wide a {
-	max-width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width+$stripped_black_bloc.column_width}{/if}{literal}px;
-}
-.content_block, .bloc_stuff, .two_columns {
-	width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.column_width*2-20}{/if}{literal}px;
+.threecol, .threecol a {
+	max-width: {/literal}{$three_columns}{literal}px;
 }
 .stuffs_thumbnails, .stuffs_thumbnails #thumbnails, .one_column {
-	width:{/literal}{if $stripped_black_bloc.thumbnail_width}{$stripped_black_bloc.thumbnail_width-10 }{/if}{literal}px;
+	width:{/literal}{$one_column}{literal}px;
 }
-.bloc, .bloc_big {
+.content_block, .bloc_stuff, .two_columns {
+	width:{/literal}{$two_columns}{literal}px;
+}
+.bloc_stuff #comments ul.commentList {
+	width:{/literal}{$two_columns-30}{literal}px;
+}
+.content_block, #the_page .middle_block {
+  margin-left:5px !important;
+{/literal}
+    margin-top: {math equation="( x - y )/2" y=$stripped_black_bloc.thumbnail_width x=$stripped_black_bloc.column_width}px !important;
+		margin-bottom:{math equation="( x - y )/2" y=$stripped_black_bloc.thumbnail_width x=$stripped_black_bloc.column_width}px !important;
+{literal}
+}
+.bloc, .stuffs_thumbnails, .stuffs_thumbnails #thumbnails {
 {/literal}
     margin-top: {math equation="( x - y - 10)/2" y=$stripped_black_bloc.thumbnail_width x=$stripped_black_bloc.column_width}px;
 		margin-bottom:{math equation="( x - y - 10)/2" y=$stripped_black_bloc.thumbnail_width x=$stripped_black_bloc.column_width}px;

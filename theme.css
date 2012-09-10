@@ -132,7 +132,7 @@
 .gmapsMarkup {
 width: auto !important;
 }
-.bloc, .bloc_big {
+.bloc {
     display: block;
     margin-top: 3px;
 		margin-bottom:3px;
@@ -148,10 +148,10 @@ width: auto !important;
 .menuf ul li ul {
     z-index: 1100;
 }
-.bloc *, .bloc_big * {
+.bloc * {
     position: relative;
 }
-.bloc .title, .bloc_big .title {
+.bloc .title {
     left: 6px;
     max-width: 138px;
     padding: 7px 10px 6px;
@@ -164,7 +164,7 @@ width: auto !important;
     margin-right: 5px;
     padding: 7px 10px 8px;
 }
-.bloc a, .bloc_big a {
+.bloc a {
     display: block;
     overflow: hidden;
     position: relative;
@@ -188,8 +188,8 @@ width: auto !important;
 	display:none
 }
 #subcontent .stuffs_block #comments ul.thumbnailCategories, #comments ul {
-	padding:20px;
-    display: inline-block;
+	padding:5px;
+  display: inline-block;
 }
 #subcontent .stuffs_block, .content_block {
 	padding:0;
@@ -213,7 +213,7 @@ a {
     color: #FFFFFF;
     text-decoration: none;
 }
-.masonry-brick, .bloc .title, .bloc_big .title, .nav_bulle {
+.masonry-brick, .bloc .title, .nav_bulle {
 	color: #FFFFFF;
 	background-image: url("img/btn.png");
 	border-radius: 5px 5px 5px 5px;
@@ -226,10 +226,8 @@ a {
 	white-space: normal;
 
 }
-.bloc a, .bloc_big a {
-    border-radius: 5px 5px 5px 5px;
-}
-.thumbnails .bloc a, .thumbnails .bloc_big a {
+.bloc a {
+  border-radius: 5px 5px 5px 5px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.75);
   -moz-box-shadow: 0 5px 5px rgba(0,0,0,0.75);
@@ -241,14 +239,9 @@ a {
     color: #E6554F;
 }
 .album {
-	background-color:#595959;
+	background-color:transparent;
 }
 
-.content_block .additional_info {
-	color:inherit;
-	background: none;
-	border:none;
-}
 .bloc_stuff {
 	border: 1px solid #424242;
 }
@@ -283,6 +276,27 @@ a {
 	white-space: normal;
 	border: 1px solid #424242;
 	padding:5px;
+}
+.content_block .additional_info {
+	color: #FFFFFF;
+	background-image: url("img/btn.png");
+	background-color:transparent;
+	border-radius: 5px 5px 5px 5px;
+	font-family: Helvetica,Arial,sans-serif;
+	text-decoration: none;
+	white-space: normal;
+	border: 1px solid #424242;
+	padding:5px;
+}
+.bloc_stuff {
+	color: #FFFFFF;
+	background-image: url("img/btn.png");
+	background-color:transparent;
+	border-radius: 5px 5px 5px 5px;
+	font-family: Helvetica,Arial,sans-serif;
+	text-decoration: none;
+	white-space: normal;
+	border: 1px solid #424242;
 }
 .titrePage .categoryActions {
 	color: #FFFFFF;

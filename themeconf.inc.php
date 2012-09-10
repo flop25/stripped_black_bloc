@@ -63,7 +63,7 @@ function stripped_black_bloc($tpl_thumbnails_var)
   $i=1;
   foreach ($tpl_thumbnails_var as $tplvar)
   {
-    $tplvar['TN_CLASS']=($i==$config['starting_to']) ? "bloc_big" : "bloc";
+    $tplvar['TN_CLASS']=($i==$config['starting_to']) ? "twocol" : "onecol";
     $new_tplvar[]=$tplvar;
     $i= ($i==$config['every_x']) ? 1 : $i+1 ;
   }
