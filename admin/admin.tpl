@@ -55,7 +55,7 @@ FORM.properties SPAN.property {
         &nbsp;{'Use the width parameter above as a maximum heigth'|@translate}</label>
       <br>
       <label>
-        <input type="radio" name="f_orientation_option" id="orientation_option" value="big_landscape" {if $options.orientation_option=="max_heigth"}checked{/if}>
+        <input type="radio" name="f_orientation_option" id="orientation_option" value="big_landscape" {if $options.orientation_option=="big_landscape"}checked{/if}>
         &nbsp;{'Display big thumbnails for landscape pictures'|@translate}</label>
       <br>
     </li>
