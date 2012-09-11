@@ -13,7 +13,7 @@ if (!isset($conf['stripped_black_bloc']))
   'every_x'           => 20,
   'starting_to'           => 1,
   'catthumb'         => 'none', //none - same - all
-  'portrait_limitation'         => 'none' //none - yes
+  'orientation_option'         => 'none' //none - max_heigth -big_landscape
   );
   $query = "
 INSERT INTO " . CONFIG_TABLE . " (param,value,comment)
@@ -31,7 +31,7 @@ elseif (count(unserialize( $conf['stripped_black_bloc'] ))!=7)
   'every_x'           => (isset($conff['every_x'])) ? $conff['every_x'] : 20,
   'starting_to'           => (isset($conff['starting_to'])) ? $conff['starting_to'] :1,
   'catthumb'         => (isset($conff['catthumb'])) ? $conff['catthumb'] :'none', //none - same - all
-  'portrait_limitation'         => (isset($conff['portrait_limitation'])) ? $conff['portrait_limitation'] :'none' //none - yes
+  'orientation_option'         => (isset($conff['orientation_option'])) ? $conff['orientation_option'] :'none' //none - max_heigth -big_landscape
   );
   conf_update_param('stripped_black_bloc', pwg_db_real_escape_string(serialize($config)));
   load_conf_from_db();

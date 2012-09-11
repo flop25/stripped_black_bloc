@@ -14,12 +14,20 @@
     {elseif ($thumbnail.width > $triplehigh) and ($thumbnail.width>$stripped_black_bloc.column_width+$stripped_black_bloc.column_width)}
       {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_big, $thumbnail.src_image)}
       {assign var=TN_CLASS value='twocol'}
-    {elseif (($thumbnail.width < $thumbnail.height) and $stripped_black_bloc.portrait_limitation=="yes")}
+    {elseif (($thumbnail.width < $thumbnail.height) and $stripped_black_bloc.orientation_option=="max_heigth")}
       {if $thumbnail.TN_CLASS=="twocol" and $thumbnail.width>$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width}
         {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_big_vert, $thumbnail.src_image)}
         {assign var=TN_CLASS value='twocol'}
       {else}
         {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_vert, $thumbnail.src_image)}
+        {assign var=TN_CLASS value='onecol'}
+      {/if}
+    {elseif $stripped_black_bloc.orientation_option=="big_landscape"}
+      {if ($thumbnail.TN_CLASS=="twocol" or $thumbnail.width > $thumbnail.height) and ($thumbnail.width>$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width)}
+        {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_big, $thumbnail.src_image)}
+        {assign var=TN_CLASS value='twocol'}
+      {else}
+        {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc, $thumbnail.src_image)}
         {assign var=TN_CLASS value='onecol'}
       {/if}
     {else}

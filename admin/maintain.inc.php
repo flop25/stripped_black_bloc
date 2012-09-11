@@ -13,7 +13,7 @@ function theme_activate($id, $version, &$errors)
  	'every_x'						=> 20,
 	'starting_to'						=> 1,
   'catthumb'         => 'none', //none - same - all
-  'portrait_limitation'         => 'none' //none - yes
+  'orientation_option'         => 'none' //none - max_heigth - big_landscape
       );
       
     $query = "
