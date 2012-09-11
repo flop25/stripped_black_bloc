@@ -24,7 +24,7 @@
         {assign var=TN_CLASS value="onecol"}
       {/if}
   {elseif $stripped_black_bloc.orientation_option=="big_landscape"}
-    {if (($cat.representative.TN_CLASS=="twocol" and $stripped_black_bloc.catthumb=="same") or $cat.representative.width > $cat.representative.height) and ($cat.representative.width>$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width)}
+    {if (($cat.representative.TN_CLASS=="twocol" and $stripped_black_bloc.catthumb=="same") or $cat.representative.width > $cat.representative.height) and ($cat.representative.width>$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width) and $stripped_black_bloc.catthumb!="none"}
       {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_big, $cat.representative.src_image)}
       {assign var=TN_CLASS value='twocol'}
     {else}

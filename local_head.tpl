@@ -94,7 +94,7 @@ jQuery(document).ready(function(jQuery){
 		// if cookie says the menu is hiding, keep it hidden!
 	{/literal} {if $stripped.hideMenu} {literal} 
 	if (sidemenu == 'showing') {
-		jQuery("#content_cell").css({'margin-left' : '20em'});
+		jQuery("#content_cell").css({'margin-left' : '18em'});
 		isdisplayed=true;
 	}
 	else {
@@ -107,14 +107,14 @@ jQuery(document).ready(function(jQuery){
 		isdisplayed=false;
 	}
 	else {
-		jQuery("#content_cell").css({'margin-left' : '20em'});
+		jQuery("#content_cell").css({'margin-left' : '18em'});
 		isdisplayed=true;
 	}
 	{/literal} {/if} {literal} 
 	// creates a variable with the contents of the cookie side-menu
 	jQuery("#menuswitcher").click(function(){
 		if (jQuery("#menubar").is(":hidden") || isdisplayed==false ) {
-			jQuery("#content_cell").css({'margin-left' : '20em'});
+			jQuery("#content_cell").css({'margin-left' : '18em'});
 			isdisplayed=true;
 		} else {
 			jQuery("#content_cell").css({'margin-left' : '0'});

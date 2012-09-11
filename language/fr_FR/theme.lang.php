@@ -17,6 +17,6 @@ $lang['Use the width parameter above as a maximum heigth'] = "Utilisez la largeu
 $lang['Display big thumbnails for landscape pictures'] = "Afficher de grosses miniatures pour les miniatures paysages";
 $lang['About big thumbnails, for the albums :'] = "A propos de grosses miniatures, pour les images représentatives des albums :";
 $lang['don\'t generate big thumbnails'] = "ne pas générer de grosses miniatures";
-$lang['use the same config as above'] = "utiliser la config 'Créer une grosse miniature toutes les' ci-dessus";
+$lang['use the same config as above'] = "utiliser la configuration ci-dessus";
 $lang['always generate big thumbnails'] = "toujours générer des grosses miniatures";
 ?>
