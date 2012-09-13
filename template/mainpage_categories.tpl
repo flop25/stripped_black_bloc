@@ -13,7 +13,7 @@
     {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_wide, $cat.representative.src_image)}
     {assign var=TN_CLASS value="twocol"}
   {elseif $stripped_black_bloc.catthumb=="all"}
-    {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_big_vert, $cat.representative.src_image)}
+    {assign var=derivative value=$pwg->derivative($derivative_stripped_black_bloc_big, $cat.representative.src_image)}
     {assign var=TN_CLASS value="twocol"}
   {elseif $cat.representative.width < $cat.representative.height and $stripped_black_bloc.orientation_option=="max_heigth"}
       {if $cat.TN_CLASS=="twocol" and $stripped_black_bloc.catthumb=="same"}
