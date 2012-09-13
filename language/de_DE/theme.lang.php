@@ -35,4 +35,5 @@ $lang['always generate big thumbnails'] = 'Immer große Vorschaubilder erzeugen'
 $lang['color main'] = 'Nicht die graue Farbe';
 $lang['don\'t generate big thumbnails'] = 'erzeugen keine großen Vorschaubilder';
 $lang['use the same config as above'] = 'verwende die gleiche Konfiguration wie oben';
+$lang['Display big thumbnails for landscape pictures'] = 'Zeige große Vorschaubilder für Querformat Fotos';
 ?>
