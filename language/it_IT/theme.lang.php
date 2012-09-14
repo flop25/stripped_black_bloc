@@ -35,4 +35,8 @@ $lang['The parent-theme Stripped need to be enabled in order to use its paramete
 $lang['use the same config as above'] = 'usa la stessa configurazione';
 $lang['Width of columns'] = 'Larghezza delle colonne';
 $lang['Width of thumbnails'] = 'Larghezza delle miniature';
+$lang['About portrait/landscape pictures :'] = 'Riguardo immagini nel formato ritratto/paesaggio(Nota che il plugin gestisce automaticamente le anteprime del formato panorama)';
+$lang['Display big thumbnails for landscape pictures'] = 'Mostra anteprime di grande formato per le immagini in formato paesaggio';
+$lang['No Maximum Height and the width is the one set above'] = 'Non hai impostato ne l\'altezza max ne la larghezza max';
+$lang['Use the width parameter above as a maximum heigth'] = 'Usa la larghezza massima come valore di altezza massima';
 ?>
