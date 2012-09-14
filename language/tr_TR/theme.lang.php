@@ -35,4 +35,8 @@ $lang['always generate big thumbnails'] = 'her zaman büyük pul resimleri yarat
 $lang['color main'] = 'Gri renk değil:';
 $lang['don\'t generate big thumbnails'] = 'büyük pul resimleri yaratma';
 $lang['use the same config as above'] = 'yukarıdaki konfigürasyonu kullan';
+$lang['About portrait/landscape pictures :'] = 'Portre/manzara resimleri hakkında (Eklenti,panoramaların pul resimlerini (thumbnail) otomatik olarak yönetir):';
+$lang['Display big thumbnails for landscape pictures'] = 'Manzara resimleri için büyük pul resimleri (thumbnail) görüntüle';
+$lang['No Maximum Height and the width is the one set above'] = 'Yukarıdaki bir sette maks. yükseklik ve genişlik bulunmuyor';
+$lang['Use the width parameter above as a maximum heigth'] = 'Yukarıdaki genişlik parametresini maks. yükseklik olarak kullan';
 ?>
