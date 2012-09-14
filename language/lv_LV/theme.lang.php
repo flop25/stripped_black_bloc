@@ -15,4 +15,8 @@ $lang['About big thumbnails, for the albums :'] = 'Par albūmu lielajām sīkbil
 $lang['don\'t generate big thumbnails'] = 'neveidot lielās sīkbildes';
 $lang['use the same config as above'] = 'lietot to pašu konfigurāciju kā iepriekš';
 $lang['always generate big thumbnails'] = 'vienmēr veidot lielās sīkbildes';
+$lang['Use the width parameter above as a maximum heigth'] = 'Lietot augstākesošo platuma vērtību kā maksimālo augstumu';
+$lang['No Maximum Height and the width is the one set above'] = 'Ne Maksimālais Augstums un platums ir viens no augstāk iestatītajiem';
+$lang['About portrait/landscape pictures :'] = 'Par portretu/ainavu attēliem (Ievērojiet, ka spraudnis automātiski pārvalda panorāmattēlu sīkbildes):';
+$lang['Display big thumbnails for landscape pictures'] = 'Rādīt lielas sīkbildes ainavu attēliem';
 ?>
