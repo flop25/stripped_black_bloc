@@ -36,4 +36,7 @@ $lang['color main'] = 'Nicht die graue Farbe';
 $lang['don\'t generate big thumbnails'] = 'erzeugen keine großen Vorschaubilder';
 $lang['use the same config as above'] = 'verwende die gleiche Konfiguration wie oben';
 $lang['Display big thumbnails for landscape pictures'] = 'Zeige große Vorschaubilder für Querformat Fotos';
+$lang['About portrait/landscape pictures :'] = 'Über Hochformat / Querformat Bilder (BEACHTEN SIE, DASS das Plugin automatisch die Vorschaubilder von Panoramen Verwaltet):';
+$lang['No Maximum Height and the width is the one set above'] = 'Keine maximale Höhe und die Breite der einen Satz drüber';
+$lang['Use the width parameter above as a maximum heigth'] = 'Verwenden Sie den Breitenparameter als maximale Höhe';
 ?>
