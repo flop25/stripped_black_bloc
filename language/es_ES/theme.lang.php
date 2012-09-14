@@ -15,4 +15,8 @@ $lang['About big thumbnails, for the albums :'] = "A proposito de grandes miniat
 $lang['don\'t generate big thumbnails'] = "no generar grandes miniaturas";
 $lang['use the same config as above'] = 'utilisar la configuración "Crear una grande miniatura cada" aqui ariba';
 $lang['always generate big thumbnails'] = "Siempre generar grandes miniaturas";
+$lang['About portrait/landscape pictures :'] = 'Acerca de las imágenes retratos / paisajes (las miniaturas de panorama se manejan automáticamente):';
+$lang['Display big thumbnails for landscape pictures'] = 'Visualizar grandes miniaturas para las miniaturas de paisaje';
+$lang['No Maximum Height and the width is the one set above'] = 'No hay altura máxima y el ancho es el configurado arriba ';
+$lang['Use the width parameter above as a maximum heigth'] = 'Utilizar el ancho mencionado arriba como limitación de la altura';
 ?>
