@@ -35,4 +35,8 @@ $lang['always generate big thumbnails'] = 'gerar sempre as miniaturas';
 $lang['color main'] = 'Cor não-cinza:';
 $lang['don\'t generate big thumbnails'] = 'não gerar miniaturas grandes';
 $lang['use the same config as above'] = 'usar a mesma configuração usada em cima';
+$lang['About portrait/landscape pictures :'] = 'Sobre fotos retrato\/paisagem (Note que a extensão auto-gerência as miniaturas de panoramas): ';
+$lang['Display big thumbnails for landscape pictures'] = 'Exibir miniaturas grandes para fotos de paisagem ';
+$lang['No Maximum Height and the width is the one set above'] = 'Nenhuma altura máxima. A largura é aquela que definir acima ';
+$lang['Use the width parameter above as a maximum heigth'] = 'Usar a largura parâmetro acima como altura máxima ';
 ?>
