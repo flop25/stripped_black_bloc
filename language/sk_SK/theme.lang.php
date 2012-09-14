@@ -35,4 +35,8 @@ $lang['always generate big thumbnails'] = 'vždy generovať veľké náhľady';
 $lang['color main'] = 'Bez šedej farby:';
 $lang['don\'t generate big thumbnails'] = 'negenerovať veľké náhľady';
 $lang['use the same config as above'] = 'použiť rovnakú konfiguráciu ako hore';
+$lang['No Maximum Height and the width is the one set above'] = 'Žiadna maximálna výška a šírka nie je určená';
+$lang['About portrait/landscape pictures :'] = 'O fotkách na výšku/šírku (Všimnite si, že doplnok auto-manages spravuje náhľady panorám )';
+$lang['Use the width parameter above as a maximum heigth'] = 'Použitie parametra šírka vyššie ako maximálna výška';
+$lang['Display big thumbnails for landscape pictures'] = 'Zobraziť veľké náhľady pre krajinárske fotky';
 ?>
