@@ -21,22 +21,22 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 $lang['(it need to be inferior than the width of columns)'] = '(skal altid være mindre end kolonnebredden)';
-$lang['(set 0 to disable)'] = '(angiv "0" for at deaktivere)';
+$lang['(set 0 to disable)'] = '(skriv 0 for at deaktivere)';
 $lang['... starting to the position number'] = '...start til position nummer';
-$lang['About big thumbnails, for the albums :'] = 'Store thumbnails, for albums:';
-$lang['About portrait/landscape pictures :'] = 'Billeder i portræt-/landskabsformat (bemærk at plugin\'en automatisk håndterer thumbnails for panoramaer)';
-$lang['Create a big thumbnail every'] = 'Generer en stor thumbnail hver';
-$lang['Display big thumbnails for landscape pictures'] = 'Vis store thumbnails for billeder i landskabsformat';
+$lang['About big thumbnails, for the albums :'] = 'Store miniaturebilleder, til albummerne:';
+$lang['About portrait/landscape pictures :'] = 'Billeder i portræt-/landskabsformat (bemærk at plugin\'en automatisk håndterer panoramers miniaturebilleder):';
+$lang['Create a big thumbnail every'] = 'Dan et stort miniaturebillede hver';
+$lang['Display big thumbnails for landscape pictures'] = 'Vis store miniaturebilleder for billeder i landskabsformat';
 $lang['Displaying options'] = 'Indstillinger for visning';
-$lang['No Maximum Height and the width is the one set above'] = 'Ingen maksimum højde. Bredde er som indstillet ovenfor';
+$lang['No Maximum Height and the width is the one set above'] = 'Ingen maksimal højde, og bredden er som opsat oven for';
 $lang['Page'] = 'Side';
-$lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns, ';
-$lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'Master temaet Stripped skal være aktiveret for at kunne benytte indstillingerne for dette tema';
-$lang['Use the width parameter above as a maximum heigth'] = 'Brug indstillingen for bredde ovenfor som maksimum højde ';
+$lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns, opsætningsside';
+$lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'Forældretemaet Stripped skal være aktiveret for at kunne benytte dets parametre';
+$lang['Use the width parameter above as a maximum heigth'] = 'Brug bredde-parameteret oven for til maksimal højde';
 $lang['Width of columns'] = 'Bredde på kolonner';
-$lang['Width of thumbnails'] = 'Bredde på thumbnails';
-$lang['always generate big thumbnails'] = 'generer altid thumbnails';
+$lang['Width of thumbnails'] = 'Bredde på miniaturebilleder';
+$lang['always generate big thumbnails'] = 'dan altid store miniaturebilleder';
 $lang['color main'] = 'Ikke grå farve:';
-$lang['don\'t generate big thumbnails'] = 'generer ikke store thumbnails';
-$lang['use the same config as above'] = 'brug samme indstillinger som ovenfor';
+$lang['don\'t generate big thumbnails'] = 'dan ikke store miniaturebilleder';
+$lang['use the same config as above'] = 'brug samme opsætning som ovenfor';
 ?>
