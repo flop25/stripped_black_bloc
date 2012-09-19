@@ -28,7 +28,7 @@ $lang['About portrait/landscape pictures :'] = 'Billeder i portræt-/landskabsfo
 $lang['Create a big thumbnail every'] = 'Dan et stort miniaturebillede hver';
 $lang['Display big thumbnails for landscape pictures'] = 'Vis store miniaturebilleder for billeder i landskabsformat';
 $lang['Displaying options'] = 'Indstillinger for visning';
-$lang['No Maximum Height and the width is the one set above'] = 'Ingen maksimal højde, og bredden er som opsat oven for';
+$lang['No Maximum Height and the width is the one set above'] = 'Ingen maksimal højde, og bredden er som opsat ovenfor';
 $lang['Page'] = 'Side';
 $lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns, opsætningsside';
 $lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'Forældretemaet Stripped skal være aktiveret for at kunne benytte dets parametre';
@@ -36,7 +36,7 @@ $lang['Use the width parameter above as a maximum heigth'] = 'Brug bredde-parame
 $lang['Width of columns'] = 'Bredde på kolonner';
 $lang['Width of thumbnails'] = 'Bredde på miniaturebilleder';
 $lang['always generate big thumbnails'] = 'dan altid store miniaturebilleder';
-$lang['color main'] = 'Ikke grå farve:';
+$lang['color main'] = 'Ikke-grå farve:';
 $lang['don\'t generate big thumbnails'] = 'dan ikke store miniaturebilleder';
 $lang['use the same config as above'] = 'brug samme opsætning som ovenfor';
 ?>
