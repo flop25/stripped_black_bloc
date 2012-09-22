@@ -35,4 +35,8 @@ $lang['always generate big thumbnails'] = 'Zawsze generuj duże miniaturki';
 $lang['color main'] = 'Nie szary kolor';
 $lang['don\'t generate big thumbnails'] = 'Nie generuj dużych miniaturek';
 $lang['use the same config as above'] = 'Użyj powyższej konfiguracji';
+$lang['About portrait/landscape pictures :'] = 'O portretach/krajobrazach (Zauważ, że wtyczka automatycznie zarządza miniaturkami panoram)';
+$lang['Display big thumbnails for landscape pictures'] = 'Wyświetlaj większe miniaturki dla krajobrazów';
+$lang['No Maximum Height and the width is the one set above'] = 'Bez maksymalnej wysokości a szerokość ustawiona tak jak powyższa';
+$lang['Use the width parameter above as a maximum heigth'] = 'Użyj parametru szerokość tak jak maksymalnej wysokości';
 ?>
