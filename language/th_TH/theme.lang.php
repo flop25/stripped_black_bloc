@@ -27,4 +27,12 @@ $lang['Width of columns'] = 'ความกว้างของคอลัม
 $lang['Width of thumbnails'] = 'ความกว้างของภาพขนาดเล็ก';
 $lang['Displaying options'] = 'ตัวเลือกการแสดง';
 $lang['Page'] = 'หน้า';
+$lang['About big thumbnails, for the albums :'] = 'เกี่ยวกับรูปย่อขนาดใหญ่, สำหรับอัลบั้ม:';
+$lang['Display big thumbnails for landscape pictures'] = 'แสดงภาพขนาดย่อขนาดใหญ่สำหรับรูปภาพแนวนอน';
+$lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns หน้าการกำหนดค่า';
+$lang['Use the width parameter above as a maximum heigth'] = 'ใช้ตัวแปรความกว้างข้างต้นเป็นความสูงสูงสุด';
+$lang['always generate big thumbnails'] = 'สร้างรูปขนาดย่อขนาดใหญ่ เสมอ';
+$lang['Create a big thumbnail every'] = 'สร้างรูปขนาดย่อใหญ่ทุกๆ รูป';
+$lang['... starting to the position number'] = 'เริ่มต้นตำแหน่งหมายเลข';
+$lang['(set 0 to disable)'] = '(ตั้งค่าเป็น 0 เพื่อปิดการใช้งาน)';
 ?>
