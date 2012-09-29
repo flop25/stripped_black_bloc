@@ -31,11 +31,12 @@ $lang['use the same config as above'] = 'použít stejné nastavení jako výše
 $lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns, Konfigurační strana';
 $lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'Nadřazené téma Stripped musí být aktivní, aby bylo možné použít jeho parametry';
 $lang['(it need to be inferior than the width of columns)'] = '(musí být menší než šířka sloupců)';
-$lang['(set 0 to disable)'] = '(nastavte o pro zrušení)';
+$lang['(set 0 to disable)'] = '(nastavte 0 pro zrušení)';
 $lang['... starting to the position number'] = '...začít od pozice číslo';
 $lang['About big thumbnails, for the albums :'] = 'O velkých náhledech pro alba:';
 $lang['Create a big thumbnail every'] = 'Vytvořit velký náhled každý';
-$lang['About portrait/landscape pictures :'] = 'o fotkách na výšku / na šířku (poznámka: plugin sám upravuje náhledy panoramat)';
+$lang['About portrait/landscape pictures :'] = 'O fotkách na výšku / na šířku (poznámka: plugin sám upravuje náhledy panoramat)';
 $lang['Display big thumbnails for landscape pictures'] = 'Zobrazí velké nahledy pro fotky na šířku';
 $lang['Use the width parameter above as a maximum heigth'] = 'Použije rozměr šířku pro maximální rozměr výšky';
+$lang['No Maximum Height and the width is the one set above'] = 'Nebyla nastavena maximální výška, šířka je nastavena výše';
 ?>
