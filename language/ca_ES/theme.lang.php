@@ -36,4 +36,8 @@ $lang['always generate big thumbnails'] = 'Generar sempre miniatures grans';
 $lang['color main'] = 'No és de color gris:';
 $lang['don\'t generate big thumbnails'] = 'No generar miniatures grans';
 $lang['use the same config as above'] = 'Utilitzar la mateixa configuació que la indicada.';
+$lang['No Maximum Height and the width is the one set above'] = 'Sense altura màxima. L\'amplada és la indicada al damunt.';
+$lang['About portrait/landscape pictures :'] = 'Quant a imatges verticals i horitzontals (Tingues en compte que el complement autogestiona les miniatures dels panorames)';
+$lang['Use the width parameter above as a maximum heigth'] = 'Utilitzar el paràmetre d\'amplada de sota com a altura mínima';
+$lang['Display big thumbnails for landscape pictures'] = 'Visualitzar miniatures grans per imatges horizontals';
 ?>
