@@ -35,4 +35,8 @@ $lang['always generate big thumbnails'] = 'mindig készüljenek nagy bélyegkép
 $lang['color main'] = 'Nem szürke színű:';
 $lang['don\'t generate big thumbnails'] = 'ne készüljenek nagy bélyegképek';
 $lang['use the same config as above'] = 'fenti beállítások használata';
+$lang['About portrait/landscape pictures :'] = 'Álló és fekvő képekről (Megjegyzés: a plugin automatikusan kezeli a panoráma képek bélyeg-képeit):';
+$lang['Display big thumbnails for landscape pictures'] = 'Mutass nagy bélyeg-képet a fekvő képekhez';
+$lang['No Maximum Height and the width is the one set above'] = 'Nincs Maximális Kép-Magasság és a szélesség a fent beállított';
+$lang['Use the width parameter above as a maximum heigth'] = 'Használjuk a fenti szélesség-paramétert mint maximális magasságot';
 ?>
