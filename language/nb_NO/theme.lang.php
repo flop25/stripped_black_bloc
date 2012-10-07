@@ -37,4 +37,6 @@ $lang['don\'t generate big thumbnails'] = 'ikke generer store miniatyrbilder';
 $lang['use the same config as above'] = 'bruk samme konfigurasjon som over';
 $lang['About portrait/landscape pictures :'] = 'Om portrett / landskap bilder (Merk at programtillegget automatisk styrer miniatyrer av panoramabilder):';
 $lang['Display big thumbnails for landscape pictures'] = 'Vis store miniatyrer av landskapsbilder';
+$lang['No Maximum Height and the width is the one set above'] = 'Ingen maksimumhøyde, og bredden er den som er satt over';
+$lang['Use the width parameter above as a maximum heigth'] = 'Bruk breddeparameteret ovenfor som maksimal høyde';
 ?>
