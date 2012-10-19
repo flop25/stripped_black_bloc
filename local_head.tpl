@@ -5,6 +5,9 @@
 {assign var='two_columns' value=$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width}
 {assign var='three_columns' value=$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width+$stripped_black_bloc.column_width}
 {html_style}{literal}
+.bloc {
+display:block;
+}
 #theHeader a, .titrePage a, .footer_login a, .navigationBar a, #calendar_block A {
 	color: {/literal}{if $stripped_black_bloc.color_main}#{$stripped_black_bloc.color_main}{/if}{literal};
 }

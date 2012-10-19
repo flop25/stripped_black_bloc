@@ -133,7 +133,7 @@
 width: auto !important;
 }
 .bloc {
-    display: block;
+    display: inline-block;
     margin-top: 3px;
 		margin-bottom:3px;
     padding: 5px;

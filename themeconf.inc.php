@@ -30,7 +30,7 @@ load_language('theme.lang', PHPWG_THEMES_PATH.'stripped_black_bloc/');
 
 include(PHPWG_THEMES_PATH.'stripped_black_bloc/admin/upgrade.inc.php');
 
-add_event_handler('loc_begin_page_header', 'set_config_values_stripped_black_bloc');
+add_event_handler('init', 'set_config_values_stripped_black_bloc');
 
 function set_config_values_stripped_black_bloc()
 {
