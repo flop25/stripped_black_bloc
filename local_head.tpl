@@ -73,7 +73,7 @@ function tnb_resize() {
 	 masonry: {
 		columnWidth: {/literal} {if $stripped_black_bloc.column_width}{$stripped_black_bloc.column_width}{/if}{literal}
  },
-		itemSelector: '.bloc, .bloc_big, .content_block, .bloc_stuff',
+		itemSelector: '.bloc, .bloc_big, .content_block, .bloc_stuff, .errors, .infos',
 		isAnimated: true
 	});
 }
