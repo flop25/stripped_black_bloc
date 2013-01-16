@@ -28,11 +28,15 @@ $lang['Create a big thumbnail every'] = 'Skapa en stor miniatyr var:';
 $lang['Displaying options'] = 'Visningsalternativ';
 $lang['Page'] = 'Sida';
 $lang['Stripped & Columns Theme Configuration'] = 'Avskalad & kolumner, inställningssida';
-$lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'Överliggande tema Avskalad måste vara aktiverat för att använda dess parametrar';
+$lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'Överliggande tema "Stripped" måste vara aktiverat för att använda dess parametrar';
 $lang['Width of columns'] = 'Kolumnbredd';
 $lang['Width of thumbnails'] = 'Bredd på miniatyrer';
 $lang['always generate big thumbnails'] = 'skapa alltid stora miniatyrer';
 $lang['color main'] = 'Inte grå färg:';
 $lang['don\'t generate big thumbnails'] = 'skapa inte stora minatyrer';
 $lang['use the same config as above'] = 'använd samma inställningar som ovan';
+$lang['About portrait/landscape pictures :'] = 'Gällande stående/liggande bilder (Observera att plugin automatiskt hanterar miniatyrer av panoramabilder';
+$lang['Use the width parameter above as a maximum heigth'] = 'Använd parameter för bredd som maximal höjd';
+$lang['Display big thumbnails for landscape pictures'] = 'Visa stora miniatyrer för liggande bilder';
+$lang['No Maximum Height and the width is the one set above'] = 'Ingen maximal höjd och bredd är enligt ovan inställning';
 ?>
