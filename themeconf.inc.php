@@ -96,7 +96,7 @@ function stripped_black_bloc_prefilter_index($content, &$smarty)
 
   {if !empty($CONTENT_DESCRIPTION) }';
   $content = preg_replace($search, $replacement, $content);
-  $search = '#\{if \!empty\(\$navbar\) \}[\s]*\{include file=\'navigation_bar\.tpl\'\|@get_extent:\'navbar\'\}[\s]*\{/if\}#';  
+  $search = '#\{if \!empty\(\$thumb_navbar\) \}[\s]*\{include file=\'navigation_bar\.tpl\'\|@get_extent:\'navbar\' navbar=\$thumb_navbar\}[\s]*\{/if\}#';  
   $replacement = '';
   $content = preg_replace($search, $replacement, $content);
 

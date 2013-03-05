@@ -67,9 +67,6 @@
 {
 	padding-bottom: 20px;
 }
-.nav_bulle {
-  position: relative;
-}
 .categoryActions .menuf .flags {
     margin-top: 5px;
 }
@@ -184,6 +181,14 @@ width: auto !important;
     display: inline;
     float: right;
 }
+.nav_bulle {
+  position: relative;
+  display: inline-block !important;
+  overflow: auto! important;
+  text-indent: inherit !important;
+  width: auto !important;
+}
+
 #thumb_navigation {
 	display:none
 }
