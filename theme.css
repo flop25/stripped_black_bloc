@@ -188,7 +188,9 @@ width: auto !important;
   text-indent: inherit !important;
   width: auto !important;
 }
-
+#thumb_navbar {
+  display: inline-block
+}
 #thumb_navigation {
 	display:none
 }
