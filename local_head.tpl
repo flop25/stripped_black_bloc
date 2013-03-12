@@ -1,9 +1,3 @@
-{if ($BODY_ID=='theCategoryPage')}
-{combine_script id='jquery.isotope' load='header' require='jquery' path='themes/stripped_black_bloc/js/isotope.js'}
-{combine_script id='jquery.cookie' load='header' require='jquery' path='themes/stripped_black_bloc/js/jquery.ck.min.js'}
-{assign var='one_column' value=$stripped_black_bloc.thumbnail_width}
-{assign var='two_columns' value=$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width}
-{assign var='three_columns' value=$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width+$stripped_black_bloc.column_width}
 {html_style}{literal}
 .bloc {
 display:block;
@@ -14,6 +8,22 @@ display:block;
 .album a {
   border: 1.5px solid #{/literal}{$stripped_black_bloc.color_main}{literal};
   margin:-2px;
+}
+{/literal}{if isset($chronology_calendar)}{literal}
+#subcontent {
+	min-height: inherit;
+}
+{/literal}{/if}
+{/html_style}
+{if ($BODY_ID=='theCategoryPage')}
+{combine_script id='jquery.isotope' load='header' require='jquery' path='themes/stripped_black_bloc/js/isotope.js'}
+{combine_script id='jquery.cookie' load='header' require='jquery' path='themes/stripped_black_bloc/js/jquery.ck.min.js'}
+{assign var='one_column' value=$stripped_black_bloc.thumbnail_width}
+{assign var='two_columns' value=$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width}
+{assign var='three_columns' value=$stripped_black_bloc.thumbnail_width+$stripped_black_bloc.column_width+$stripped_black_bloc.column_width}
+{html_style}{literal}
+.bloc {
+display:block;
 }
 
 .onecol, .gmapsMarkup, .onecol a {
@@ -47,11 +57,7 @@ display:block;
 		margin-bottom:{math equation="( x - y - 10)/2" y=$stripped_black_bloc.thumbnail_width x=$stripped_black_bloc.column_width}px;
 {literal}
 }
-{/literal}{if isset($chronology_calendar)}{literal}
-#subcontent {
-	min-height: inherit;
-}
-{/literal}{/if}
+{/literal}
 {/html_style}
 
 {footer_script load="async"}
