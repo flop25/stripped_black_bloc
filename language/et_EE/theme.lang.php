@@ -37,4 +37,6 @@ $lang['(set 0 to disable)'] = '(deaktiveeri)';
 $lang['... starting to the position number'] = '...alustades positsiooni numbrist';
 $lang['(it need to be inferior than the width of columns)'] = '(peab olema väiksem kui veergude laius)';
 $lang['About portrait/landscape pictures :'] = 'Rõht/püstpaigutusega pildid (plug-in valib automaatselt panoraam väikepildi suuruse)';
+$lang['No Maximum Height and the width is the one set above'] = 'Ülal ei ole määratud maksimaalne kõrgus ja laius';
+$lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns, seadistuse lehekülg';
 ?>
