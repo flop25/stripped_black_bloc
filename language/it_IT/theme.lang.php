@@ -22,21 +22,21 @@
 // +-----------------------------------------------------------------------+
 $lang['(it need to be inferior than the width of columns)'] = '(è necessario che sia inferiore alla larghezza delle colonne)';
 $lang['(set 0 to disable)'] = '(imposta 0 per disabilitare)';
-$lang['... starting to the position number'] = '...inizia dal numero di posizione';
+$lang['... starting to the position number'] = '... inizia dal numero di posizione';
 $lang['About big thumbnails, for the albums :'] = 'Riguardo le miniature più grandi per gli album:';
 $lang['always generate big thumbnails'] = 'genera sempre miniature più grandi';
 $lang['color main'] = 'Non di colore grigio:';
 $lang['Create a big thumbnail every'] = 'Crea sempre una miniatura più grande';
 $lang['Displaying options'] = 'Mostra opzioni';
-$lang['don\'t generate big thumbnails'] = 'non generare miniature più grandi';
+$lang['don\'t generate big thumbnails'] = 'non generare miniature grandi';
 $lang['Page'] = 'Pagina';
-$lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns, pagina di configurazione';
+$lang['Stripped & Columns Theme Configuration'] = 'Stripped & Colonne, Pagina di Configurazione';
 $lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'Il tema padre Stripped deve essere abilitato per poter modificare questi parametri';
 $lang['use the same config as above'] = 'usa la stessa configurazione';
 $lang['Width of columns'] = 'Larghezza delle colonne';
 $lang['Width of thumbnails'] = 'Larghezza delle miniature';
-$lang['About portrait/landscape pictures :'] = 'Riguardo immagini nel formato ritratto/paesaggio(Nota che il plugin gestisce automaticamente le anteprime del formato panorama)';
-$lang['Display big thumbnails for landscape pictures'] = 'Mostra anteprime di grande formato per le immagini in formato paesaggio';
-$lang['No Maximum Height and the width is the one set above'] = 'Non hai impostato ne l\'altezza max ne la larghezza max';
+$lang['About portrait/landscape pictures :'] = 'Riguardo immagini nel formato ritratto/paesaggio (Nota che il plugin gestisce automaticamente le anteprime del formato panorama)';
+$lang['Display big thumbnails for landscape pictures'] = 'Mostra miniature di grande formato per le immagini in formato paesaggio';
+$lang['No Maximum Height and the width is the one set above'] = 'Nessuna altezza massima e la larghezza è quello impostata sopra';
 $lang['Use the width parameter above as a maximum heigth'] = 'Usa la larghezza massima come valore di altezza massima';
 ?>
