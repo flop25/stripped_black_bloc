@@ -33,6 +33,7 @@ if(isset($_POST['submit_stripped_black_bloc']))
 	$config_send['starting_to']=(isset($_POST['f_starting_to'])) ? $_POST['f_starting_to'] : 1;
 	$config_send['catthumb']=(isset($_POST['f_catthumb'])) ? $_POST['f_catthumb'] : 'none';
 	$config_send['orientation_option']=(isset($_POST['f_orientation_option'])) ? $_POST['f_orientation_option'] : 'none';
+	$config_send['hover_action']=(isset($_POST['f_hover_action'])) ? $_POST['f_hover_action'] : 'fadein';
 	conf_update_param('stripped_black_bloc', pwg_db_real_escape_string(serialize($config_send)));
 
   array_push($page['infos'], l10n('Information data registered in database'));

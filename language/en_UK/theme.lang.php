@@ -18,4 +18,9 @@ $lang['About big thumbnails, for the albums :'] = "About big thumbnails, for the
 $lang['don\'t generate big thumbnails'] = "don't generate big thumbnails";
 $lang['use the same config as above'] = "use the same config as above";
 $lang['always generate big thumbnails'] = "always generate big thumbnails";
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Effect to use when the mouse is over the thumbnails:';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Opacity at 75%, then 100% on mouseover';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Opacity at 100%, then 75% on mouseover';
+$lang['For albums, the border becomes white'] = 'For albums, the border becomes white';
+$lang['No effect'] = 'No effect';
 ?>

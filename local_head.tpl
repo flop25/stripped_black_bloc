@@ -83,19 +83,24 @@ function tnb_resize() {
 		isAnimated: true
 	});
 }
-function FadeSC() {
-jQuery(".bloc a").hover(function() { jQuery(this).fadeTo(500, 1); }, function() { jQuery(this).fadeTo(500, 0.75);  });
-jQuery(".bloc_big a").hover(function() { jQuery(this).fadeTo(500, 1); }, function() { jQuery(this).fadeTo(500, 0.75);  });
+// fade onmouseover
+function Hover_action_SC() {
+{/literal}{if $stripped_black_bloc.hover_action=="fadein"}{literal}
+  jQuery(".bloc a, .bloc_big a").fadeTo(500, 0.75);
+  jQuery(".bloc a, .bloc_big a").hover(function() { jQuery(this).fadeTo(500, 1); }, function() { jQuery(this).fadeTo(500, 0.75);  });
+{/literal}{elseif $stripped_black_bloc.hover_action=="fadeout"}{literal}
+  jQuery(".bloc a, .bloc_big a").hover(function() { jQuery(this).fadeTo(500, 0.75); }, function() { jQuery(this).fadeTo(500, 1);  });
+{/literal}{elseif $stripped_black_bloc.hover_action=="border"}{literal}
+  jQuery(".bloc a, .bloc_big a").hover(function() { jQuery(this).animate({borderColor: "#fff"}, 900); }, function() { jQuery(this).animate({borderColor: "{/literal}{if $stripped_black_bloc.color_main}#{$stripped_black_bloc.color_main}{/if}{literal}"}, 900);  });
+{/literal}{/if}{literal}
 }
-jQuery(window).bind("RVTS_loaded", FadeSC);
+jQuery(window).bind("RVTS_loaded", Hover_action_SC);
 
 
 jQuery(document).ready(function(jQuery){
   jQuery('#rvtsUp').remove();
 
-	// fade onmouseover
-	jQuery(".bloc a").hover(function() { jQuery(this).fadeTo(500, 1); }, function() { jQuery(this).fadeTo(500, 0.75);  });
-  jQuery(".bloc_big a").hover(function() { jQuery(this).fadeTo(500, 1); }, function() { jQuery(this).fadeTo(500, 0.75);  });
+	Hover_action_SC();
   
 	// sidemenu managment
 	var sidemenu = jQuery.cookie('side-menu');

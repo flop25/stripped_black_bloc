@@ -1,5 +1,4 @@
 <?php
-
 $lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'Le thème-parent Stripped doit être activé pour pouvoir utiliser ses paramètres';
 $lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns, Page de configuration';
 $lang['Page'] = 'Page';
@@ -19,4 +18,9 @@ $lang['About big thumbnails, for the albums :'] = "A propos de grosses miniature
 $lang['don\'t generate big thumbnails'] = "ne pas générer de grosses miniatures";
 $lang['use the same config as above'] = "utiliser la configuration ci-dessus";
 $lang['always generate big thumbnails'] = "toujours générer des grosses miniatures";
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Effet à utiliser quand la souris survole une miniature';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Opacité à 75%, puis à 100% au survol';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Opacité à 100%, puis à 75% au survol';
+$lang['For albums, the border becomes white'] = 'Pour les albums, la bordure devient blanche';
+$lang['No effect'] = 'Aucun effet';
 ?>

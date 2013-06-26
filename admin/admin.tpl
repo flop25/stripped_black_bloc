@@ -22,6 +22,26 @@ FORM.properties SPAN.property {
       <input type="text" id="color_main" name="f_color_main" size="6" maxlength="6" value="{$options.color_main}" style="text-align:center;">
     </li>
     <li>
+      <br>
+      <label>{'Effect to use when the mouse is over the thumbnails:'|@translate}</label>
+      <br>
+     <label>
+        <input type="radio" name="f_hover_action" id="hover_action" value="fadein"  {if $options.hover_action=="fadein"}checked{/if}>
+        &nbsp;{'Opacity at 75%, then 100% on mouseover'|@translate}</label>
+      <br>
+      <label>
+        <input type="radio" name="f_hover_action" id="hover_action" value="fadeout" {if $options.hover_action=="fadeout"}checked{/if}>
+        &nbsp;{'Opacity at 100%, then 75% on mouseover'|@translate}</label>
+      <br>
+      <label>
+        <input type="radio" name="f_hover_action" id="hover_action" value="border" {if $options.hover_action=="border"}checked{/if}>
+        &nbsp;{'For albums, the border becomes white'|@translate}</label>
+      <br>
+      <label>
+        <input type="radio" name="f_hover_action" id="hover_action" value="none" {if $options.hover_action=="none"}checked{/if}>
+        &nbsp;{'No effect'|@translate}</label>
+      <br><br>
+    </li>
     <li>
       <label for="column_width"><span class="property">{'Width of columns'|@translate}</span>&nbsp;</label>
       <input type="text" id="column_width" name="f_column_width" size="4" maxlength="4" value="{$options.column_width}" style="text-align:center;">

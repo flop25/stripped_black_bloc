@@ -42,7 +42,7 @@
   {/if}
     {assign var='size' value=$derivative->get_size()}
 	<div class="bloc {$TN_CLASS} album">
-			<a href="{$cat.URL}" style="background: url({$derivative->get_url()}) no-repeat scroll center center transparent; height: {$size[1]}px; width: {$size[0]}px; opacity: 0.75;" >
+			<a href="{$cat.URL}" style="background: url({$derivative->get_url()}) no-repeat scroll center center transparent; height: {$size[1]}px; width: {$size[0]}px;" >
 				{$cat.NAME}
 			</a>
 				<div class="title">{$cat.NAME}</div>

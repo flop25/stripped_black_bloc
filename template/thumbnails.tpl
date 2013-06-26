@@ -41,7 +41,7 @@
     {/if}
      {assign var='size' value=$derivative->get_size()}
   <div class="bloc {$TN_CLASS}">
-    <a title="{$thumbnail.TN_TITLE}" href="{$thumbnail.URL}" style="background: url({if $derivative->is_cached()}{$derivative->get_url()}{else}{$ROOT_URL}{$themeconf.img_dir}/loading.gif{/if}) no-repeat scroll center center transparent; height: {$size[1]}px; width: {$size[0]}px; opacity: 0.75;" {if !$derivative->is_cached()}data-src="{$derivative->get_url()}"{/if}>
+    <a title="{$thumbnail.TN_TITLE}" href="{$thumbnail.URL}" style="background: url({if $derivative->is_cached()}{$derivative->get_url()}{else}{$ROOT_URL}{$themeconf.img_dir}/loading.gif{/if}) no-repeat scroll center center transparent; height: {$size[1]}px; width: {$size[0]}px;" {if !$derivative->is_cached()}data-src="{$derivative->get_url()}"{/if}>
     {if isset($thumbnail.NAME)}{$thumbnail.NAME}{else}{$thumbnail.TN_TITLE}{/if}
     </a>
 	  {if $SHOW_THUMBNAIL_CAPTION }
