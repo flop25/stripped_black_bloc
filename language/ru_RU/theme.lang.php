@@ -39,4 +39,9 @@ $lang['About portrait/landscape pictures :'] = 'О портретной/пейз
 $lang['Display big thumbnails for landscape pictures'] = 'Отображать большие картинки для пейзажной ориентации фотографии';
 $lang['No Maximum Height and the width is the one set above'] = 'Не ограничивать максимальную высоту миниатюры';
 $lang['Use the width parameter above as a maximum heigth'] = 'Использовать значение ширины для задания максимальной высоты';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Эффект применяется, когда курсор мыши находится над миниатюрами:';
+$lang['No effect'] = 'Эффекта нет';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Непрозрачность 100%, после наведения курсора мыши - 75%';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Непрозрачность 75%, после наведения курсора мыши - 100%';
+$lang['For albums, the border becomes white'] = 'Для альбомов. Границы становятся белыми';
 ?>
