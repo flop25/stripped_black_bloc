@@ -39,4 +39,9 @@ $lang['always generate big thumbnails'] = 'dan altid store miniaturebilleder';
 $lang['color main'] = 'Ikke-grå farve:';
 $lang['don\'t generate big thumbnails'] = 'dan ikke store miniaturebilleder';
 $lang['use the same config as above'] = 'brug samme opsætning som ovenfor';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Effekt der skal anvendes når musen er over miniaturebillederne:';
+$lang['For albums, the border becomes white'] = 'Ved albummer bliver rammen hvid';
+$lang['No effect'] = 'Ingen effekt';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Gennemsigtighed på 100 %, dernæst 75 % når musen svæver derover';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Gennemsigtighed på 75 %, dernæst 100 & når musen svæver derover';
 ?>
