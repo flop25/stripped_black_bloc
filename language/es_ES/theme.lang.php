@@ -19,4 +19,9 @@ $lang['About portrait/landscape pictures :'] = 'Acerca de las imágenes retratos
 $lang['Display big thumbnails for landscape pictures'] = 'Visualizar grandes miniaturas para las miniaturas de paisaje';
 $lang['No Maximum Height and the width is the one set above'] = 'No hay altura máxima y el ancho es el configurado arriba ';
 $lang['Use the width parameter above as a maximum heigth'] = 'Utilizar el ancho mencionado arriba como limitación de la altura';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Efecto para utilizar cuando el ratón está sobre las miniaturas:';
+$lang['For albums, the border becomes white'] = 'Para álbumes, los bordes se convierten en blanco';
+$lang['No effect'] = 'Sin efectos';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Opacidad al 100%, después 75% en sobrevuelo del ratón';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Opacidad al 75%, después 100% en sobrevuelo del ratón';
 ?>
