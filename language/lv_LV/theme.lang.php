@@ -19,4 +19,9 @@ $lang['Use the width parameter above as a maximum heigth'] = 'Lietot augstākeso
 $lang['No Maximum Height and the width is the one set above'] = 'Ne Maksimālais Augstums un platums ir viens no augstāk iestatītajiem';
 $lang['About portrait/landscape pictures :'] = 'Par portretu/ainavu attēliem (Ievērojiet, ka spraudnis automātiski pārvalda panorāmattēlu sīkbildes):';
 $lang['Display big thumbnails for landscape pictures'] = 'Rādīt lielas sīkbildes ainavu attēliem';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Efekts, kad izmanto peli ir virs sīktēliem:';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Necaurredzamība 75%, tad 100% uz mouseover';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Necaurredzamība 100%, tad 75% uz mouseover';
+$lang['No effect'] = 'Nav efekta';
+$lang['For albums, the border becomes white'] = 'Albūmiem rāmītis kļūst balts';
 ?>
