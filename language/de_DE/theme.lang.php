@@ -39,4 +39,9 @@ $lang['Display big thumbnails for landscape pictures'] = 'Zeige große Vorschaub
 $lang['About portrait/landscape pictures :'] = 'Über Hochformat / Querformat Bilder (BEACHTEN SIE, DASS das Plugin automatisch die Vorschaubilder von Panoramen Verwaltet):';
 $lang['No Maximum Height and the width is the one set above'] = 'Keine maximale Höhe und die Breite der einen Satz drüber';
 $lang['Use the width parameter above as a maximum heigth'] = 'Verwenden Sie den Breitenparameter als maximale Höhe';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Effekt tritt ein, wenn die Maus über den Vorschaubildern ist';
+$lang['For albums, the border becomes white'] = 'Bei Alben werden die Ränder weiß';
+$lang['No effect'] = 'Keine Auswirkung';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Opacity bei 100%, 75% beim Drüberfahren mit der Maus';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Opacity bei 75%, 100% beim Drüberfahren mit der Maus';
 ?>
