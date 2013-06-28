@@ -39,4 +39,9 @@ $lang['(it need to be inferior than the width of columns)'] = '(peab olema väik
 $lang['About portrait/landscape pictures :'] = 'Rõht/püstpaigutusega pildid (plug-in valib automaatselt panoraam väikepildi suuruse)';
 $lang['No Maximum Height and the width is the one set above'] = 'Ülal ei ole määratud maksimaalne kõrgus ja laius';
 $lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns, seadistuse lehekülg';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Kasutatav efekt kui hiir on pisipildi kohal:';
+$lang['For albums, the border becomes white'] = 'Albumite jaoks muutub raam valgeks';
+$lang['No effect'] = 'Efektid puuduvad';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Läbipaistvus 100%, 75% kui hiir on kohal';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Läbipaistvus 75%, 100% kui hiir on kohal';
 ?>
