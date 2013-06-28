@@ -40,4 +40,9 @@ $lang['No Maximum Height and the width is the one set above'] = 'Sense altura m�
 $lang['About portrait/landscape pictures :'] = 'Quant a imatges verticals i horitzontals (Tingues en compte que el complement autogestiona les miniatures dels panorames)';
 $lang['Use the width parameter above as a maximum heigth'] = 'Utilitzar el paràmetre d\'amplada de sota com a altura mínima';
 $lang['Display big thumbnails for landscape pictures'] = 'Visualitzar miniatures grans per imatges horizontals';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Efecte a utilitzar al passar amb el ratolí per sobre de les miniatures:';
+$lang['For albums, the border becomes white'] = 'Pels àlbums, les vores esdevenen blanques';
+$lang['No effect'] = 'Sense efecte';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Opacitat al 100%, 75% al passar el ratolí per sobre';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Opacitat al 75%, 100% al passar el ratolí per sobre';
 ?>
