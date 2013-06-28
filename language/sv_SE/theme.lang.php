@@ -39,4 +39,9 @@ $lang['About portrait/landscape pictures :'] = 'Gällande stående/liggande bild
 $lang['Use the width parameter above as a maximum heigth'] = 'Använd parameter för bredd som maximal höjd';
 $lang['Display big thumbnails for landscape pictures'] = 'Visa stora miniatyrer för liggande bilder';
 $lang['No Maximum Height and the width is the one set above'] = 'Ingen maximal höjd och bredd är enligt ovan inställning';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Effekt som kan användas när muspekaren är ovanpå tumnagel bilder:';
+$lang['For albums, the border becomes white'] = 'Det blir en vit ram runt tumnagelbilder som representerar album';
+$lang['No effect'] = 'Ingen effekt';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Transparens vid 100%, sedan 75% när muspekaren förs över';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Transparens vid 75%, sedan 100% när muspekaren förs över';
 ?>
