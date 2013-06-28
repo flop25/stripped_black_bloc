@@ -21,9 +21,9 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 $lang['(it need to be inferior than the width of columns)'] = '(precisa de ser estritamente inferior que a largura das colunas)';
-$lang['(set 0 to disable)'] = '(0 para descativar)';
+$lang['(set 0 to disable)'] = '(0 para desativar)';
 $lang['... starting to the position number'] = '...começando na posição número';
-$lang['About big thumbnails, for the albums :'] = 'Acerca das miniaturas grandes, para os álbums:';
+$lang['About big thumbnails, for the albums :'] = 'Acerca das miniaturas grandes, para os albuns:';
 $lang['Create a big thumbnail every'] = 'Criar uma miniatura maior a cada';
 $lang['Displaying options'] = 'Opções de exibição';
 $lang['Page'] = 'Página';
@@ -39,4 +39,9 @@ $lang['About portrait/landscape pictures :'] = 'Sobre fotos retrato\/paisagem (N
 $lang['Display big thumbnails for landscape pictures'] = 'Exibir miniaturas grandes para fotos de paisagem ';
 $lang['No Maximum Height and the width is the one set above'] = 'Nenhuma altura máxima. A largura é aquela que definir acima ';
 $lang['Use the width parameter above as a maximum heigth'] = 'Usar a largura parâmetro acima como altura máxima ';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Efeito a usar quando a ponta do rato está sobre as miniaturas';
+$lang['For albums, the border becomes white'] = 'Para albuns, o rebordo fica branco';
+$lang['No effect'] = 'Sem efeito';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Opacidade de 100%, depois 75% quando a ponta do rato se sobrepõe';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Opacidade de 75%, depois 100% quando a ponta do rato se sobrepõe';
 ?>
