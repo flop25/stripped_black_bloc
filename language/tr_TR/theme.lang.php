@@ -39,4 +39,9 @@ $lang['About portrait/landscape pictures :'] = 'Portre/manzara resimleri hakkın
 $lang['Display big thumbnails for landscape pictures'] = 'Manzara resimleri için büyük pul resimleri (thumbnail) görüntüle';
 $lang['No Maximum Height and the width is the one set above'] = 'Yukarıdaki bir sette maks. yükseklik ve genişlik bulunmuyor';
 $lang['Use the width parameter above as a maximum heigth'] = 'Yukarıdaki genişlik parametresini maks. yükseklik olarak kullan';
+$lang['No effect'] = 'Efekt yok';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Opaklık normalde %75, işaretçi üzerindeyken %100';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Opaklık normalde %100, işaretçi üzerindeyken %75';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'İşaretçi pul resimleri üzerindeyken kullanılabilen efektler.';
+$lang['For albums, the border becomes white'] = 'Albümler için, çerçeve beyaz olur';
 ?>
