@@ -39,4 +39,9 @@ $lang['About portrait/landscape pictures :'] = 'Riguardo immagini nel formato ri
 $lang['Display big thumbnails for landscape pictures'] = 'Mostra miniature di grande formato per le immagini in formato paesaggio';
 $lang['No Maximum Height and the width is the one set above'] = 'Nessuna altezza massima e la larghezza è quello impostata sopra';
 $lang['Use the width parameter above as a maximum heigth'] = 'Usa la larghezza massima come valore di altezza massima';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Opacità al 75%, quindi 100% su mouseover';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Opacità al 100%, quindi 75% al passaggio del mouse';
+$lang['No effect'] = 'Nessun effetto';
+$lang['For albums, the border becomes white'] = 'Per gli album, il bordo diventa bianco';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Effetto da utilizzare quando il mouse si trova sopra le miniature:';
 ?>
