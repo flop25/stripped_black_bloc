@@ -39,4 +39,9 @@ $lang['always generate big thumbnails'] = '產生大的縮略圖';
 $lang['color main'] = '不是灰色的顏色：';
 $lang['don\'t generate big thumbnails'] = '不產生大的縮略圖';
 $lang['use the same config as above'] = '使用相同的設定如上';
+$lang['Effect to use when the mouse is over the thumbnails:'] = '當游標經過縮圖時，將使用的特效：';
+$lang['For albums, the border becomes white'] = '相本的邊框將轉為白色';
+$lang['No effect'] = '無特效';
+$lang['Opacity at 100%, then 75% on mouseover'] = '當游標經過時，透明度將由100%轉至75%';
+$lang['Opacity at 75%, then 100% on mouseover'] = '當游標經過時，透明度將由75%轉為100%';
 ?>
