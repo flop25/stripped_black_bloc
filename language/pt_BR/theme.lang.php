@@ -39,4 +39,9 @@ $lang['always generate big thumbnails'] = 'Sempre gere grandes miniaturas';
 $lang['color main'] = 'Sem cor cinza:';
 $lang['don\'t generate big thumbnails'] = 'Não gere grandes miniaturas';
 $lang['use the same config as above'] = 'Use  a mesma configuração acima';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Efeito para usar quando o mouse está sobre as miniaturas:';
+$lang['For albums, the border becomes white'] = 'Para álbuns, a borda torna-se branca';
+$lang['No effect'] = 'Sem efeito';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Opacidade em 100%, então 75% em mouseover';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Opacidade em 75%, então 100% em mouseover';
 ?>
