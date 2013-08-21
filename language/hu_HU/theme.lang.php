@@ -39,4 +39,9 @@ $lang['About portrait/landscape pictures :'] = 'Álló és fekvő képekről (Me
 $lang['Display big thumbnails for landscape pictures'] = 'Mutass nagy bélyeg-képet a fekvő képekhez';
 $lang['No Maximum Height and the width is the one set above'] = 'Nincs Maximális Kép-Magasság és a szélesség a fent beállított';
 $lang['Use the width parameter above as a maximum heigth'] = 'Használjuk a fenti szélesség-paramétert mint maximális magasságot';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Átlátszatlanság 100%, majd 75% az egérmutató alatt';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Átlátszatlanság 75%, majd 100% az egérmutató alatt';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Effekt használata az egérmutató bélyegkép felé mozgatásakor:';
+$lang['For albums, the border becomes white'] = 'Albumoknál a keret fehérré változik';
+$lang['No effect'] = 'Nincs effekt';
 ?>
