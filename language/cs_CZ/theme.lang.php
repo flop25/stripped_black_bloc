@@ -39,4 +39,9 @@ $lang['About portrait/landscape pictures :'] = 'O fotkách na výšku / na ší�
 $lang['Display big thumbnails for landscape pictures'] = 'Zobrazí velké nahledy pro fotky na šířku';
 $lang['Use the width parameter above as a maximum heigth'] = 'Použije rozměr šířku pro maximální rozměr výšky';
 $lang['No Maximum Height and the width is the one set above'] = 'Nebyla nastavena maximální výška, šířka je nastavena výše';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Efekt k použití, když je myš nad náhledem:';
+$lang['For albums, the border becomes white'] = 'Pro alba, okraj zbělá';
+$lang['No effect'] = 'Bez efektu';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Neprůhlednost 100%, při přejetí myší 75%';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Neprůhlednost 75%, při přejetí myší 100%';
 ?>
