@@ -39,4 +39,8 @@ $lang['About portrait/landscape pictures :'] = 'Om portrett / landskap bilder (M
 $lang['Display big thumbnails for landscape pictures'] = 'Vis store miniatyrer av landskapsbilder';
 $lang['No Maximum Height and the width is the one set above'] = 'Ingen maksimumhøyde, og bredden er den som er satt over';
 $lang['Use the width parameter above as a maximum heigth'] = 'Bruk breddeparameteret ovenfor som maksimal høyde';
-?>
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Opacity på 75%, så 100% når mus over';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Opacity på 100%, så 75% når mus over';
+$lang['No effect'] = 'Ingen effekt';
+$lang['For albums, the border becomes white'] = 'For albumer, rammen blir hvit';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Ønsket bruker effekt når musen er over miniatyrbildene:';
