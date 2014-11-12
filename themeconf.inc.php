@@ -35,7 +35,7 @@ add_event_handler('init', 'set_config_values_stripped_black_bloc');
 function set_config_values_stripped_black_bloc()
 {
   global $conf, $template;
-  $config = unserialize( $conf['stripped_black_bloc'] );
+  $config = safe_unserialize( $conf['stripped_black_bloc'] );
   $template->assign( 'stripped_black_bloc', $config );
 }
 
@@ -57,7 +57,7 @@ function stripped_black_bloc($tpl_thumbnails_var)
       ), $template->smarty);
   }
   
-  $config = unserialize( $conf['stripped_black_bloc'] );
+  $config = safe_unserialize( $conf['stripped_black_bloc'] );
   $template->assign( 'stripped_black_bloc', $config );
   $new_tplvar=array();
   $i=1;

@@ -16,15 +16,12 @@ if (!isset($conf['stripped_black_bloc']))
   'orientation_option'         => 'none', //none - max_heigth - big_landscape
   'hover_action'         => 'fadein', //fadein - fadeout - border - none
   );
-  $query = "
-INSERT INTO " . CONFIG_TABLE . " (param,value,comment)
-VALUES ('stripped_black_bloc' , '".pwg_db_real_escape_string(serialize($config))."' , 'color_main#column_width#thumbnail_width#catthumb(none - same - all)');";
-  pwg_query($query);
-  load_conf_from_db();
+
+  conf_update_param('stripped_black_bloc', $config, true);
 }
-elseif (count(unserialize( $conf['stripped_black_bloc'] ))!=8)
+elseif (count(safe_unserialize( $conf['stripped_black_bloc'] ))!=8)
 {
-  $conff=unserialize($conf['stripped_black_bloc']);
+  $conff = safe_unserialize($conf['stripped_black_bloc']);
   $config = array(
   'color_main'            => (isset($conff['color_main'])) ? $conff['color_main'] :'E6554F',
   'column_width'            => (isset($conff['column_width'])) ? $conff['column_width'] :170,
@@ -35,7 +32,7 @@ elseif (count(unserialize( $conf['stripped_black_bloc'] ))!=8)
   'orientation_option'         => (isset($conff['orientation_option'])) ? $conff['orientation_option'] :'none', //none - max_heigth -big_landscape
   'hover_action'         => (isset($conff['hover_action'])) ? $conff['hover_action'] :'fadein' //fadein - fadeout - border - none
   );
-  conf_update_param('stripped_black_bloc', pwg_db_real_escape_string(serialize($config)));
-  load_conf_from_db();
+
+  conf_update_param('stripped_black_bloc', $config, true);
 }
 ?>
