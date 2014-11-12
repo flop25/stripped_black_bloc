@@ -34,12 +34,11 @@ if(isset($_POST['submit_stripped_black_bloc']))
 	$config_send['catthumb']=(isset($_POST['f_catthumb'])) ? $_POST['f_catthumb'] : 'none';
 	$config_send['orientation_option']=(isset($_POST['f_orientation_option'])) ? $_POST['f_orientation_option'] : 'none';
 	$config_send['hover_action']=(isset($_POST['f_hover_action'])) ? $_POST['f_hover_action'] : 'fadein';
-	conf_update_param('stripped_black_bloc', pwg_db_real_escape_string(serialize($config_send)));
+	conf_update_param('stripped_black_bloc', $config_send, true);
 
   array_push($page['infos'], l10n('Information data registered in database'));
-
-  load_conf_from_db();
 }
+
 if(!isset($conf['stripped']))
 {
   array_push($page['errors'], l10n('The parent-theme Stripped need to be enabled in order to use its parameters'));
@@ -48,7 +47,7 @@ if(!isset($conf['stripped']))
 $template->set_filenames(array(
     'theme_admin_content' => dirname(__FILE__) . '/admin.tpl'));
 
-$template->assign('options', unserialize($conf['stripped_black_bloc']));
+$template->assign('options', safe_unserialize($conf['stripped_black_bloc']));
 
 $template->assign_var_from_handle('ADMIN_CONTENT', 'theme_admin_content');
   
