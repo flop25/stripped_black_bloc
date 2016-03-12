@@ -20,28 +20,27 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
-$lang['(it need to be inferior than the width of columns)'] = '(es muss strikt kleiner, als die Breite der Spalten)';
-$lang['(set 0 to disable)'] = '(wähle o zum ausschalten)';
-$lang['... starting to the position number'] = 'Starte an der Positions-Nummer';
-$lang['About big thumbnails, for the albums :'] = 'Über große Vorschaubilder, für die Alben:';
-$lang['Create a big thumbnail every'] = 'Erstelle immer eine große Vorschaubilder';
+$lang['(it need to be inferior than the width of columns)'] = '(muss zwingend kleiner sein, als die Spaltenbreite)';
+$lang['(set 0 to disable)'] = '(0 zum deaktivieren)';
+$lang['... starting to the position number'] = 'Zur Positions-Nummer';
+$lang['About big thumbnails, for the albums :'] = 'Große Vorschaubilder, für die Alben:';
+$lang['Create a big thumbnail every'] = 'Ein großes Vorschaubild erstellen, alle';
 $lang['Displaying options'] = 'Anzeigeoptionen';
 $lang['Page'] = 'Seite';
-$lang['Stripped & Columns Theme Configuration'] = 'Stripped & Columns, Konfigurationsseite';
-$lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'Um die Parameter zu benutzen muss das Eltern Design Stripped aktiviert sein';
-$lang['Width of columns'] = 'Breite von Spalten';
+$lang['Stripped & Columns Theme Configuration'] = '»Stripped & Columns«-Konfigurationsseite';
+$lang['The parent-theme Stripped need to be enabled in order to use its parameters'] = 'Um diese Werte zu benutzen muss das übergeordnete Design »Stripped« aktiviert sein';
+$lang['Width of columns'] = 'Spaltenbreite';
 $lang['Width of thumbnails'] = 'Breite der Vorschaubilder';
 $lang['always generate big thumbnails'] = 'Immer große Vorschaubilder erzeugen';
-$lang['color main'] = 'Nicht die graue Farbe';
-$lang['don\'t generate big thumbnails'] = 'erzeugen keine großen Vorschaubilder';
-$lang['use the same config as above'] = 'verwende die gleiche Konfiguration wie oben';
-$lang['Display big thumbnails for landscape pictures'] = 'Zeige große Vorschaubilder für Querformat Fotos';
-$lang['About portrait/landscape pictures :'] = 'Über Hochformat / Querformat Bilder (BEACHTEN SIE, DASS das Plugin automatisch die Vorschaubilder von Panoramen Verwaltet):';
-$lang['No Maximum Height and the width is the one set above'] = 'Keine maximale Höhe und die Breite der einen Satz drüber';
-$lang['Use the width parameter above as a maximum heigth'] = 'Verwenden Sie den Breitenparameter als maximale Höhe';
-$lang['Effect to use when the mouse is over the thumbnails:'] = 'Effekt tritt ein, wenn die Maus über den Vorschaubildern ist';
+$lang['color main'] = 'Kein Grau:';
+$lang['don\'t generate big thumbnails'] = 'Keine großen Vorschaubilder erzeugen';
+$lang['use the same config as above'] = 'Die gleiche Konfiguration wie oben verwenden';
+$lang['Display big thumbnails for landscape pictures'] = 'Große Vorschaubilder für Fotos im Querformat anzeigen';
+$lang['About portrait/landscape pictures :'] = 'Bilder im Hoch- und Querformat (Hinweis: Das Plugin verwaltet die Vorschaubilder von Panoramen automatisch):';
+$lang['No Maximum Height and the width is the one set above'] = 'Ohne Maximalhöhe und Breite oberhalb setzen';
+$lang['Use the width parameter above as a maximum heigth'] = 'Den Parameter »Breite« als Maximalhöhe verwenden';
+$lang['Effect to use when the mouse is over the thumbnails:'] = 'Effekt verwenden, wenn sich der Mauszeiger über den Vorschaubildern befindet:';
 $lang['For albums, the border becomes white'] = 'Bei Alben werden die Ränder weiß';
-$lang['No effect'] = 'Keine Auswirkung';
-$lang['Opacity at 100%, then 75% on mouseover'] = 'Opacity bei 100%, 75% beim Drüberfahren mit der Maus';
-$lang['Opacity at 75%, then 100% on mouseover'] = 'Opacity bei 75%, 100% beim Drüberfahren mit der Maus';
-?>
+$lang['No effect'] = 'Kein Effekt';
+$lang['Opacity at 100%, then 75% on mouseover'] = 'Deckkraft bei 100%, 75% beim Überfahren mit der Maus';
+$lang['Opacity at 75%, then 100% on mouseover'] = 'Deckkraft bei 75%, 100% beim Überfahren mit der Maus';

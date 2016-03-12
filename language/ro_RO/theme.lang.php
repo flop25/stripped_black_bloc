@@ -39,3 +39,6 @@ $lang['About big thumbnails, for the albums :'] = 'Despre pictogramele mari, pen
 $lang['... starting to the position number'] = '...incepand cu numarul de pozitie';
 $lang['(set 0 to disable)'] = '(seteaza 0 pentru a dezactiva)';
 $lang['(it need to be inferior than the width of columns)'] = '(e nevoie sa fie strict mai mica decat latimea coloanelor)';
+$lang['About portrait/landscape pictures :'] = 'Despre pozele portret / peisaj (Rețineți că plugin-ul administrează pictograma panoramelor):';
+$lang['No Maximum Height and the width is the one set above'] = 'Nu este înălțime maximă și lățimea este cea stabilită mai sus';
+$lang['Use the width parameter above as a maximum heigth'] = 'Utilizați parametrul lățime de mai sus ca o înălțime maximă';
