@@ -82,7 +82,7 @@ function stripped_black_bloc_index()
     global $template;
     $template->set_prefilter('index', 'stripped_black_bloc_prefilter_index');
 }
-function stripped_black_bloc_prefilter_index($content, &$smarty)
+function stripped_black_bloc_prefilter_index($content)
 {
   global $page;
   $search = "#\{\'Menu\'\|@translate\}#";  
